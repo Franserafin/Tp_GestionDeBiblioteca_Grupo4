@@ -5,21 +5,21 @@ Este proyecto es una aplicación de escritorio diseñada para llevar la gestión
 
 Las entidades principales del sistema serán:
 *   **Libro:** 
-*   **Categoría:** 
+*   **Alquiler:**
 
 ## Objetivos y funcionalidades previstas
 El objetivo principal es desarrollar una aplicación utilizando una arquitectura en capas y Entity Framework Core para la persistencia de datos. 
 
 Las funcionalidades principales (ABM) incluyen:
 1. **Gestión de Libros:** Permitirá realizar el Alta, Baja (eliminación o desactivación) y Modificación de los libros del catálogo.
-2. **Gestión de Categorías:** Permitirá realizar el Alta, Baja y Modificación de las distintas categorías literarias.
+2. **Gestión de Alquileres:** Permitirá realizar el Alta, Baja y Modificación de los distintos alquileres.
 
 ## Reportes
 El sistema generará los siguientes 4 reportes básicos para el análisis de la biblioteca:
 1. Cantidad de Libros Alquilados en total.
-2. Cantidad de Categorías registradas en el sistema.
+2. Cantidad Total de alquileres.
 3. El Libro que más se alquiló.
-4. La Categoría más solicitada por los usuarios.
+4. La categoria mas Solicitada.
 
 ## Integración de capas del sistema
 Para guardar un registro en la base de datos (por ejemplo, dar de alta un nuevo Libro), la integración de las capas funcionará de la siguiente manera:
