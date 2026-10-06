@@ -1,7 +1,7 @@
 # TP_GestionDeBiblioteca_[Grupo4]
 
 ## Descripción breve del sistema
-Este proyecto es una aplicación de escritorio diseñada para llevar la gestión eficiente de una biblioteca. El sistema permitirá administrar el catálogo de libros disponibles y clasificarlos adecuadamente mediante un sistema de categorías, facilitando así el control del inventario y el seguimiento de los movimientos (alquileres) de la biblioteca.
+Este proyecto es una aplicación de escritorio diseñada para llevar la gestión eficiente de una biblioteca. El sistema permitirá administrar el catálogo de libros disponibles y el seguimiento de los movimientos (alquileres) de la biblioteca.
 
 Las entidades principales del sistema serán:
 *   **Libro:** 
@@ -10,8 +10,8 @@ Las entidades principales del sistema serán:
 ## Objetivos y funcionalidades previstas
 El objetivo principal es desarrollar una aplicación utilizando una arquitectura en capas y Entity Framework Core para la persistencia de datos. 
 
-Las funcionalidades principales (ABM) incluyen:
-1. **Gestión de Libros:** Permitirá realizar el Alta, Baja (eliminación o desactivación) y Modificación de los libros del catálogo.
+Las funcionalidades principales incluyen:
+1. **Gestión de Libros:** Permitirá realizar el Alta, Baja y Modificación de los libros.
 2. **Gestión de Alquileres:** Permitirá realizar el Alta, Baja y Modificación de los distintos alquileres.
 
 ## Reportes
