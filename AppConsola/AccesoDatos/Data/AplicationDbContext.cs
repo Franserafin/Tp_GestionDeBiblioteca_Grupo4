@@ -9,8 +9,11 @@ namespace AccesoDatos.Data
     public class AplicationDbContext : DbContext
     {
 
-        public DbSet <Artista> Artista{ get; set; }
-        public DbSet <Cancion> Cancion { get; set; }
+        public DbSet <Alquiler> Alquiler{ get; set; }
+        public DbSet <Categoria> Categoria { get; set; }
+        public DbSet<Cliente> Cliente { get; set; }
+        public DbSet<Libro> Libro { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

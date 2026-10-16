@@ -2,53 +2,38 @@
 using AccesoDatos.Repositories;
 
 // 1. Instanciamos el repositorio.
-IGenericRepository<Artista> ArtistaRepository = new GenericRepository<Artista>();
-IGenericRepository<Cancion> CancionRepository = new GenericRepository<Cancion>();
+IGenericRepository<Alquiler> AlquilerRepository = new GenericRepository<Alquiler>();
+IGenericRepository<Cliente> ClienteRepository = new GenericRepository<Cliente>();
+IGenericRepository<Libro> LibroRepository = new GenericRepository<Libro>();
+IGenericRepository<Categoria> CategoriaRepository = new GenericRepository<Categoria>();
 
 bool continuar = true;
 
 while (continuar)
 {
-    Console.WriteLine("Plataforma de musica");
-    Console.WriteLine();
-    Console.WriteLine("1. Agregar Artista");
-    Console.WriteLine("2. Agregar cancion");
-    Console.WriteLine("3. Ver canciones");
-    Console.WriteLine("4. Ver canciones mas largas");
-    Console.WriteLine("5. Ver Cantidad de Canciones");
-    Console.WriteLine("6. Ver Canciones ordenadas Alfabeticamente");
-    Console.WriteLine("7. Registrar si hay canciones");
+    Console.WriteLine("========================================");
+    Console.WriteLine("    PLATAFORMA DE GESTIÓN DE BIBLIOTECA  ");
+    Console.WriteLine("========================================");
+    Console.WriteLine("1. Agregar Cliente");
+    Console.WriteLine("2. Ver Clientes");
+    Console.WriteLine("3. Ver Libros Disponibles");
+    Console.WriteLine("4. Registrar Alquiler / Reserva");
+    Console.WriteLine("5. Devolver Libro (con penalización)");
+    Console.WriteLine("6. Ver Historial de Alquileres");
     Console.WriteLine("0. Salir");
-    Console.WriteLine();
-
+    Console.WriteLine("========================================");
     Console.Write("Seleccione una opción: ");
     string opcion = Console.ReadLine();
-    Console.Clear();
+    PresioneParaContinuar();
 
     switch (opcion)
     {
         case "1":
-            AltaArtista();
+            AltaCliente();
             break;
         case "2":
-            Altacancion();
+            VerClientes();
             break;
-        case "3":
-            VerCanciones();
-            break;
-        case "4":
-            CancionesMasLargas();
-            break;
-        case "5":
-            CantidadCanciones();
-            break;
-        case "6":
-            CancionesOrdenadas();
-            break;
-        case "7":
-            ExisteCancion();
-            break;
-
         case "0":
             Console.WriteLine("¡Cerrando el sistema de usuarios!");
             continuar = false;
@@ -61,160 +46,49 @@ while (continuar)
     }
 }
 
-void AltaArtista()
+void AltaCliente()
 {
-    Console.WriteLine("Ingrese el nombre del Artista: ");
-    string name = Console.ReadLine();
+    Console.WriteLine("--- Registrar Nuevo Cliente ---");
 
-    Console.WriteLine("Ingrese el apellido del Artista: ");
-    string lastName = Console.ReadLine();
+    Console.Write("Ingrese el nombre del cliente: ");
+    string nombre = Console.ReadLine() ?? "";
 
-    var nuevoArtista = new Artista
+    Console.Write("Ingrese el DNI del cliente: ");
+    string dni = Console.ReadLine() ?? "";
+
+    Console.Write("Ingrese el teléfono del cliente: ");
+    string telefono = Console.ReadLine() ?? "";
+
+    Cliente nuevoCliente = new Cliente
     {
-        Name = name,
-        LastName = lastName,
+        Nombre = nombre,
+        Dni = dni,
+        Telefono = telefono
     };
 
-    ArtistaRepository.Agregar(nuevoArtista);
-    Console.WriteLine("Artista agregado exitosamente.");
+    ClienteRepository.Agregar(nuevoCliente);
+    Console.WriteLine("\nCliente agregado exitosamente.");
     PresioneParaContinuar();
 }
 
-void Altacancion()
+void VerClientes() 
 {
-    void Altacancion()
+    var clientes = ClienteRepository.ObtenerTodos();
+    Console.WriteLine("--- Listado de Clientes ---");
+
+    if (!clientes.Any())
     {
-
-        GenericRepository<Artista> repoArtistas = new GenericRepository<Artista>();
-        List<Artista> listaArtistas = repoArtistas.ObtenerTodos();
-
-        if (listaArtistas.Count == 0)
-        {
-            Console.WriteLine("No hay artistas registrados");
-            Console.WriteLine("Presione una tecla para continuar");
-            PresioneParaContinuar();
-        }
-
-        Console.WriteLine("Artistas registrados:");
-        foreach (Artista a in listaArtistas)
-        {
-            Console.WriteLine($"ID: {a.Id} | Nombre: {a.Name}");
-        }
-
-        Console.WriteLine("Ingrese el ID del artista para la canción: ");
-        int artistaId = int.Parse(Console.ReadLine());
-
-        Console.WriteLine("Ingrese el nombre de la canción: ");
-        string nombrecancion = Console.ReadLine();
-
-        Console.WriteLine("Ingrese la duración en segundos de la canción: ");
-        int duracion = Convert.ToInt32(Console.ReadLine());
-
-        Cancion nuevaCancion = new Cancion
-        {
-            titulo = nombrecancion,
-            duracionsegundos= duracion,
-            ArtistaId = artistaId
-        };
-
-        GenericRepository<Cancion> repoCanciones = new GenericRepository<Cancion>();
-        repoCanciones.Agregar(nuevaCancion);
-
-        Console.WriteLine("Canción registrada");
-        Console.WriteLine("Presione una tecla para continuar");
-        PresioneParaContinuar();
+        Console.WriteLine("No hay clientes registrados.");
     }
-}
-
-void VerCanciones()
-{
-    Console.WriteLine("TODAS LAS CANCIONES");
-    GenericRepository<Cancion> repoCanciones = new GenericRepository<Cancion>();
-    List<Cancion> listaCanciones = repoCanciones.ObtenerTodos();
-    if (listaCanciones.Count == 0) 
+    else
     {
-        Console.WriteLine("No hay canciones registradas");
-    }
-    else 
-    {
-        foreach (Cancion c in listaCanciones) 
+        foreach (var cliente in clientes)
         {
-            Console.WriteLine(c.id);
-            Console.WriteLine(c.titulo);
-            Console.WriteLine(c.duracionsegundos);
-            Console.WriteLine(c.ArtistaId);
+            Console.WriteLine($"ID: {cliente.IdCliente} | Nombre: {cliente.Nombre} | DNI: {cliente.Dni} | Tel: {cliente.Telefono}");
         }
     }
-    Console.WriteLine("Presione una tecla para continuar");
     PresioneParaContinuar();
 }
-
-void CancionesMasLargas() 
-{
-    Console.WriteLine("CANCIONES MAS LARGAS");
-    GenericRepository<Cancion> repoCanciones = new GenericRepository<Cancion>();
-    List<Cancion> listaCanciones = repoCanciones.ObtenerTodos();
-    if (listaCanciones.Count == 0)
-    {
-        Console.WriteLine("No hay canciones registradas");
-    }
-    else 
-    {
-        var CancionesOrdenadas= listaCanciones.OrderByDescending(c => c.duracionsegundos).ToList();
-        foreach (Cancion c in CancionesOrdenadas) 
-        {
-            Console.WriteLine(c.id);
-            Console.WriteLine(c.titulo);
-            Console.WriteLine(c.duracionsegundos);
-            Console.WriteLine(c.ArtistaId);
-        }
-    }
-    Console.WriteLine("Presione una tecla para continuar");
-    PresioneParaContinuar();
-}
-
-void CantidadCanciones() 
-{
-    Console.WriteLine("TODAS LAS CANCIONES");
-    GenericRepository<Cancion> repoCanciones = new GenericRepository<Cancion>();
-    List<Cancion> listaCanciones = repoCanciones.ObtenerTodos();
-    int totalcanciones= listaCanciones.Count;
-    Console.WriteLine("La cantidad de canciones registradas es:  {totalcanciones}");
-    Console.WriteLine("Presione una tecla para continuar");
-    PresioneParaContinuar();
-}
-
-void CancionesOrdenadas() 
-{
-    Console.WriteLine("CANCIONES ORDENADAS ALFABETICAMENTE");
-    GenericRepository<Cancion> repoCanciones = new GenericRepository<Cancion>();
-    List<Cancion> listaCanciones = repoCanciones.ObtenerTodos();
-    var CancionesOrdenadasAlfabeticamente = listaCanciones.OrderByDescending(c => c.titulo).ToList();
-    foreach (Cancion c in listaCanciones) 
-    {
-        Console.WriteLine(c.id);
-        Console.WriteLine(c.titulo);
-        Console.WriteLine(c.duracionsegundos);
-        Console.WriteLine(c.ArtistaId);
-    }
-    Console.WriteLine("Presione una tecla para continuar");
-    PresioneParaContinuar();
-}
-
-
-void ExisteCancion() 
-{
-    Console.WriteLine("¿HAY CANCIONES REGISTRADAS?");
-    GenericRepository<Cancion> repoCanciones = new GenericRepository<Cancion>();
-    List<Cancion> listaCanciones = repoCanciones.ObtenerTodos();
-    if (listaCanciones.Count == 0)
-    {
-        Console.WriteLine("No hay canciones registradas");
-    }
-    Console.WriteLine("Presione una tecla para continuar");
-    PresioneParaContinuar();
-} 
-
 
 void PresioneParaContinuar()
 {

@@ -1,37 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\2do a\u00F1o Desarrollo de software\\Repositorio Para Parcial\\Repositorio_Para_Parcial\\AppConsola\\",
+  "WorkspaceRootPath": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0B43DBFF-E285-2334-8A77-09A4879ADD36}|AppConsola\\AppConsola.csproj|e:\\2do a\u00F1o desarrollo de software\\repositorio para parcial\\repositorio_para_parcial\\appconsola\\appconsola\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0B43DBFF-E285-2334-8A77-09A4879ADD36}|AppConsola\\AppConsola.csproj|e:\\2do a\u00F1o desarrollo de software\\programacion i\\tp_final_programacion\\tp_gestiondebiblioteca_grupo4\\appconsola\\appconsola\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B43DBFF-E285-2334-8A77-09A4879ADD36}|AppConsola\\AppConsola.csproj|solutionrelative:appconsola\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|e:\\2do a\u00F1o desarrollo de software\\repositorio para parcial\\repositorio_para_parcial\\appconsola\\accesodatos\\models\\cancion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|solutionrelative:accesodatos\\models\\cancion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|e:\\2do a\u00F1o desarrollo de software\\repositorio para parcial\\repositorio_para_parcial\\appconsola\\accesodatos\\models\\artista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|solutionrelative:accesodatos\\models\\artista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|e:\\2do a\u00F1o desarrollo de software\\repositorio para parcial\\repositorio_para_parcial\\appconsola\\accesodatos\\data\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|e:\\2do a\u00F1o desarrollo de software\\programacion i\\tp_final_programacion\\tp_gestiondebiblioteca_grupo4\\appconsola\\accesodatos\\data\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|solutionrelative:accesodatos\\data\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|e:\\2do a\u00F1o desarrollo de software\\repositorio para parcial\\repositorio_para_parcial\\appconsola\\accesodatos\\accesodatos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|e:\\2do a\u00F1o desarrollo de software\\programacion i\\tp_final_programacion\\tp_gestiondebiblioteca_grupo4\\appconsola\\accesodatos\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|solutionrelative:accesodatos\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|e:\\2do a\u00F1o desarrollo de software\\programacion i\\tp_final_programacion\\tp_gestiondebiblioteca_grupo4\\appconsola\\accesodatos\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|solutionrelative:accesodatos\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|e:\\2do a\u00F1o desarrollo de software\\programacion i\\tp_final_programacion\\tp_gestiondebiblioteca_grupo4\\appconsola\\accesodatos\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|solutionrelative:accesodatos\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|e:\\2do a\u00F1o desarrollo de software\\programacion i\\tp_final_programacion\\tp_gestiondebiblioteca_grupo4\\appconsola\\accesodatos\\models\\alquiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|solutionrelative:accesodatos\\models\\alquiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|e:\\2do a\u00F1o desarrollo de software\\programacion i\\tp_final_programacion\\tp_gestiondebiblioteca_grupo4\\appconsola\\accesodatos\\accesodatos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|solutionrelative:accesodatos\\accesodatos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B43DBFF-E285-2334-8A77-09A4879ADD36}|AppConsola\\AppConsola.csproj|e:\\2do a\u00F1o desarrollo de software\\repositorio para parcial\\repositorio_para_parcial\\appconsola\\appconsola\\appconsola.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{0B43DBFF-E285-2334-8A77-09A4879ADD36}|AppConsola\\AppConsola.csproj|e:\\2do a\u00F1o desarrollo de software\\programacion i\\tp_final_programacion\\tp_gestiondebiblioteca_grupo4\\appconsola\\appconsola\\appconsola.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{0B43DBFF-E285-2334-8A77-09A4879ADD36}|AppConsola\\AppConsola.csproj|solutionrelative:appconsola\\appconsola.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|e:\\2do a\u00F1o desarrollo de software\\repositorio para parcial\\repositorio_para_parcial\\appconsola\\accesodatos\\migrations\\20260930232542_migracionsegunda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|e:\\2do a\u00F1o desarrollo de software\\programacion i\\tp_final_programacion\\tp_gestiondebiblioteca_grupo4\\appconsola\\accesodatos\\migrations\\20260930232542_migracionsegunda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|solutionrelative:accesodatos\\migrations\\20260930232542_migracionsegunda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|e:\\2do a\u00F1o desarrollo de software\\repositorio para parcial\\repositorio_para_parcial\\appconsola\\accesodatos\\migrations\\20260930211337_migracioninicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|e:\\2do a\u00F1o desarrollo de software\\programacion i\\tp_final_programacion\\tp_gestiondebiblioteca_grupo4\\appconsola\\accesodatos\\migrations\\20260930211337_migracioninicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|solutionrelative:accesodatos\\migrations\\20260930211337_migracioninicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,15 +50,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Models\\Cliente.cs",
+              "RelativeDocumentMoniker": "AccesoDatos\\Models\\Cliente.cs",
+              "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Models\\Cliente.cs",
+              "RelativeToolTip": "AccesoDatos\\Models\\Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T21:59:58.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Models\\Categoria.cs",
+              "RelativeDocumentMoniker": "AccesoDatos\\Models\\Categoria.cs",
+              "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Models\\Categoria.cs",
+              "RelativeToolTip": "AccesoDatos\\Models\\Categoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T21:59:01.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "20260930232542_MigracionSegunda.cs",
-              "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Repositorio Para Parcial\\Repositorio_Para_Parcial\\AppConsola\\AccesoDatos\\Migrations\\20260930232542_MigracionSegunda.cs",
+              "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Migrations\\20260930232542_MigracionSegunda.cs",
               "RelativeDocumentMoniker": "AccesoDatos\\Migrations\\20260930232542_MigracionSegunda.cs",
-              "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Repositorio Para Parcial\\Repositorio_Para_Parcial\\AppConsola\\AccesoDatos\\Migrations\\20260930232542_MigracionSegunda.cs",
+              "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Migrations\\20260930232542_MigracionSegunda.cs",
               "RelativeToolTip": "AccesoDatos\\Migrations\\20260930232542_MigracionSegunda.cs",
               "ViewState": "AgIAADcAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -58,23 +92,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Cancion.cs",
-              "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Repositorio Para Parcial\\Repositorio_Para_Parcial\\AppConsola\\AccesoDatos\\Models\\Cancion.cs",
-              "RelativeDocumentMoniker": "AccesoDatos\\Models\\Cancion.cs",
-              "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Repositorio Para Parcial\\Repositorio_Para_Parcial\\AppConsola\\AccesoDatos\\Models\\Cancion.cs",
-              "RelativeToolTip": "AccesoDatos\\Models\\Cancion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Libro.cs",
+              "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Models\\Libro.cs",
+              "RelativeDocumentMoniker": "AccesoDatos\\Models\\Libro.cs",
+              "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Models\\Libro.cs",
+              "RelativeToolTip": "AccesoDatos\\Models\\Libro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T22:16:20.208Z"
+              "WhenOpened": "2026-09-30T22:16:20.208Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "20260930211337_migracioninicial.cs",
-              "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Repositorio Para Parcial\\Repositorio_Para_Parcial\\AppConsola\\AccesoDatos\\Migrations\\20260930211337_migracioninicial.cs",
+              "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Migrations\\20260930211337_migracioninicial.cs",
               "RelativeDocumentMoniker": "AccesoDatos\\Migrations\\20260930211337_migracioninicial.cs",
-              "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Repositorio Para Parcial\\Repositorio_Para_Parcial\\AppConsola\\AccesoDatos\\Migrations\\20260930211337_migracioninicial.cs",
+              "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Migrations\\20260930211337_migracioninicial.cs",
               "RelativeToolTip": "AccesoDatos\\Migrations\\20260930211337_migracioninicial.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -82,35 +117,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "AplicationDbContext.cs",
-              "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Repositorio Para Parcial\\Repositorio_Para_Parcial\\AppConsola\\AccesoDatos\\Data\\AplicationDbContext.cs",
+              "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Data\\AplicationDbContext.cs",
               "RelativeDocumentMoniker": "AccesoDatos\\Data\\AplicationDbContext.cs",
-              "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Repositorio Para Parcial\\Repositorio_Para_Parcial\\AppConsola\\AccesoDatos\\Data\\AplicationDbContext.cs",
+              "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Data\\AplicationDbContext.cs",
               "RelativeToolTip": "AccesoDatos\\Data\\AplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T21:03:11.702Z"
+              "WhenOpened": "2026-09-29T21:03:11.702Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Artista.cs",
-              "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Repositorio Para Parcial\\Repositorio_Para_Parcial\\AppConsola\\AccesoDatos\\Models\\Artista.cs",
-              "RelativeDocumentMoniker": "AccesoDatos\\Models\\Artista.cs",
-              "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Repositorio Para Parcial\\Repositorio_Para_Parcial\\AppConsola\\AccesoDatos\\Models\\Artista.cs",
-              "RelativeToolTip": "AccesoDatos\\Models\\Artista.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Alquiler.cs",
+              "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Models\\Alquiler.cs",
+              "RelativeDocumentMoniker": "AccesoDatos\\Models\\Alquiler.cs",
+              "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Models\\Alquiler.cs",
+              "RelativeToolTip": "AccesoDatos\\Models\\Alquiler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T21:01:53.481Z"
+              "WhenOpened": "2026-09-29T21:01:53.481Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "AccesoDatos.csproj",
-              "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Repositorio Para Parcial\\Repositorio_Para_Parcial\\AppConsola\\AccesoDatos\\AccesoDatos.csproj",
+              "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\AccesoDatos.csproj",
               "RelativeDocumentMoniker": "AccesoDatos\\AccesoDatos.csproj",
-              "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Repositorio Para Parcial\\Repositorio_Para_Parcial\\AppConsola\\AccesoDatos\\AccesoDatos.csproj",
+              "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\AccesoDatos.csproj",
               "RelativeToolTip": "AccesoDatos\\AccesoDatos.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -118,11 +155,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "AppConsola.csproj",
-              "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Repositorio Para Parcial\\Repositorio_Para_Parcial\\AppConsola\\AppConsola\\AppConsola.csproj",
+              "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AppConsola\\AppConsola.csproj",
               "RelativeDocumentMoniker": "AppConsola\\AppConsola.csproj",
-              "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Repositorio Para Parcial\\Repositorio_Para_Parcial\\AppConsola\\AppConsola\\AppConsola.csproj",
+              "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AppConsola\\AppConsola.csproj",
               "RelativeToolTip": "AppConsola\\AppConsola.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -132,11 +169,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Repositorio Para Parcial\\Repositorio_Para_Parcial\\AppConsola\\AppConsola\\Program.cs",
+              "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AppConsola\\Program.cs",
               "RelativeDocumentMoniker": "AppConsola\\Program.cs",
-              "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Repositorio Para Parcial\\Repositorio_Para_Parcial\\AppConsola\\AppConsola\\Program.cs",
+              "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AppConsola\\Program.cs",
               "RelativeToolTip": "AppConsola\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAxwFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-29T20:59:09.69Z",
               "EditorCaption": ""
