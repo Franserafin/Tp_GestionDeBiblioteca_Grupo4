@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="AccesoDatos/AccesoDatos.csproj" />
   <Project Path="AppConsola/AppConsola.csproj" />
+  <Project Path="Biblioteca.WinForms/Biblioteca.WinForms.csproj" Id="41f0af44-557c-4931-a921-f5f2fccb20ae" />
 </Solution>

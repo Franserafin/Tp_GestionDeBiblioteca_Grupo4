@@ -7,8 +7,8 @@ namespace AccesoDatos.Models
 
     public class Alquiler
     {
-        public int IdAlquiler { get; set; }
-
+        public int Id { get; set; }
+        public int IdReserva { get; set; }
         public DateTime FechaRetiro { get; set; }
         public DateTime FechaLimiteDevolucion { get; set; }
         public DateTime? FechaDevolucionReal { get; set; }
@@ -21,5 +21,7 @@ namespace AccesoDatos.Models
        
         public int IdCliente { get; set; }
         public Cliente? Cliente { get; set; }
+
+        public int TARIFA_PENALIZACION_DIARIA { get; set; } = 2;
     }
 }

@@ -12,3 +12,17 @@ E:\2do año Desarrollo de software\Repositorio Para Parcial\Repositorio_Para_Par
 E:\2do año Desarrollo de software\Repositorio Para Parcial\Repositorio_Para_Parcial\AppConsola\AccesoDatos\obj\Debug\net10.0\AccesoDatos.pdb
 E:\2do año Desarrollo de software\Repositorio Para Parcial\Repositorio_Para_Parcial\AppConsola\AccesoDatos\obj\Debug\net10.0\ref\AccesoDatos.dll
 E:\2do año Desarrollo de software\Repositorio Para Parcial\Repositorio_Para_Parcial\AppConsola\AccesoDatos\obj\Debug\net10.0\AccesoDa.B2719C34.Up2Date
+E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\bin\Debug\net10.0\AccesoDatos.deps.json
+E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\bin\Debug\net10.0\AccesoDatos.dll
+E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\bin\Debug\net10.0\AccesoDatos.pdb
+E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\AccesoDatos.csproj.AssemblyReference.cache
+E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\AccesoDatos.GeneratedMSBuildEditorConfig.editorconfig
+E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\AccesoDatos.AssemblyInfoInputs.cache
+E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\AccesoDatos.AssemblyInfo.cs
+E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\AccesoDatos.csproj.CoreCompileInputs.cache
+E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\AccesoDatos.sourcelink.json
+E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\AccesoDatos.dll
+E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\refint\AccesoDatos.dll
+E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\AccesoDatos.pdb
+E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\ref\AccesoDatos.dll
+E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\AccesoDa.B2719C34.Up2Date

@@ -6,6 +6,7 @@ namespace AccesoDatos.Models
 {
     public class Cliente
     {
+      public int id { get; set; }
         public int IdCliente { get; set; }
 
         public string Nombre { get; set; }

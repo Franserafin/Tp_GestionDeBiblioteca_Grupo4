@@ -7,7 +7,7 @@ namespace AccesoDatos.Models
     public class Libro
     {
         public int IdLibro { get; set; }
-
+        public int Id { get; set; }
         public string Titulo { get; set; } = string.Empty;
         public string Autor { get; set; } = string.Empty;
         public string Estado { get; set; } = "Disponible";
