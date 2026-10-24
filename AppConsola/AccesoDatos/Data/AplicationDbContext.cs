@@ -12,7 +12,7 @@ namespace AccesoDatos.Data
         public DbSet <Alquiler> Alquiler{ get; set; }
         public DbSet <Categoria> Categoria { get; set; }
         public DbSet<Cliente> Cliente { get; set; }
-        public DbSet<Libro> Libro { get; set; }
+        public DbSet<Libro> Libros { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
