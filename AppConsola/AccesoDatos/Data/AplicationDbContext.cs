@@ -1,17 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using AccesoDatos.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace AccesoDatos.Data
 {
     public class AplicationDbContext : DbContext
     {
-
-        public DbSet <Alquiler> Alquiler{ get; set; }
+        public DbSet<Alquiler> Alquileres { get; set; }
         public DbSet <Categoria> Categoria { get; set; }
-        public DbSet<Cliente> Cliente { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Libro> Libros { get; set; }
 
 

@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{41F0AF44-557C-4931-A921-F5F2FCCB20AE}|Biblioteca.WinForms\\Biblioteca.WinForms.csproj|e:\\2do a\u00F1o desarrollo de software\\programacion i\\tp_final_programacion\\tp_gestiondebiblioteca_grupo4\\appconsola\\biblioteca.winforms\\formlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41F0AF44-557C-4931-A921-F5F2FCCB20AE}|Biblioteca.WinForms\\Biblioteca.WinForms.csproj|solutionrelative:biblioteca.winforms\\formlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41F0AF44-557C-4931-A921-F5F2FCCB20AE}|Biblioteca.WinForms\\Biblioteca.WinForms.csproj|e:\\2do a\u00F1o desarrollo de software\\programacion i\\tp_final_programacion\\tp_gestiondebiblioteca_grupo4\\appconsola\\biblioteca.winforms\\formalquileres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F0AF44-557C-4931-A921-F5F2FCCB20AE}|Biblioteca.WinForms\\Biblioteca.WinForms.csproj|solutionrelative:biblioteca.winforms\\formalquileres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|e:\\2do a\u00F1o desarrollo de software\\programacion i\\tp_final_programacion\\tp_gestiondebiblioteca_grupo4\\appconsola\\accesodatos\\models\\alquiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|solutionrelative:accesodatos\\models\\alquiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FormLibros.cs",
-              "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormLibros.cs",
-              "RelativeDocumentMoniker": "Biblioteca.WinForms\\FormLibros.cs",
-              "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormLibros.cs",
-              "RelativeToolTip": "Biblioteca.WinForms\\FormLibros.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAxAAAAAAAAAA==",
+              "Title": "FormAlquileres.cs",
+              "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormAlquileres.cs",
+              "RelativeDocumentMoniker": "Biblioteca.WinForms\\FormAlquileres.cs",
+              "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormAlquileres.cs",
+              "RelativeToolTip": "Biblioteca.WinForms\\FormAlquileres.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-24T18:43:47.046Z",
+              "WhenOpened": "2026-11-03T02:16:31.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Alquiler.cs",
+              "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Models\\Alquiler.cs",
+              "RelativeDocumentMoniker": "AccesoDatos\\Models\\Alquiler.cs",
+              "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Models\\Alquiler.cs",
+              "RelativeToolTip": "AccesoDatos\\Models\\Alquiler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T02:07:12.97Z",
               "EditorCaption": ""
             }
           ]

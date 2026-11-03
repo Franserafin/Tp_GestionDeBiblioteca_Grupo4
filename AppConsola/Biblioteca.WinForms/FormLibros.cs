@@ -36,10 +36,17 @@ namespace Biblioteca.WinForms
                 return;
             }
 
+            // Nueva validación para el autor
+            if (string.IsNullOrWhiteSpace(txtAutor.Text))
+            {
+                MessageBox.Show("El autor es obligatorio.");
+                return;
+            }
+
             var nuevoLibro = new Libro
             {
-                Titulo = txtTitulo.Text
-                // Autor = txtAutor.Text // Descomenta si tienes la propiedad Autor en tu modelo Libro
+                Titulo = txtTitulo.Text,
+                Autor = txtAutor.Text // Asegúrate de que esta línea no esté comentada
             };
 
             _context.Libros.Add(nuevoLibro);
@@ -58,13 +65,26 @@ namespace Biblioteca.WinForms
                 return;
             }
 
+            if (string.IsNullOrWhiteSpace(txtTitulo.Text))
+            {
+                MessageBox.Show("El título es obligatorio.");
+                return;
+            }
+
+            // Nueva validación para el autor
+            if (string.IsNullOrWhiteSpace(txtAutor.Text))
+            {
+                MessageBox.Show("El autor es obligatorio.");
+                return;
+            }
+
             int id = int.Parse(txtId.Text);
             var libro = _context.Libros.FirstOrDefault(l => l.Id == id);
 
             if (libro != null)
             {
                 libro.Titulo = txtTitulo.Text;
-                // libro.Autor = txtAutor.Text;
+                libro.Autor = txtAutor.Text; // Asegúrate de que esta línea no esté comentada
 
                 _context.SaveChanges();
                 MessageBox.Show("Libro modificado exitosamente.");

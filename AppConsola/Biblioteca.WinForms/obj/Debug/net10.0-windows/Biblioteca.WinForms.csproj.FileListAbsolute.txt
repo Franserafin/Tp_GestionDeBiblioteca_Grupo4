@@ -184,3 +184,7 @@ E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_Gesti
 E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\Biblioteca.WinForms\obj\Debug\net10.0-windows\Biblioteca.WinForms.pdb
 E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\Biblioteca.WinForms\obj\Debug\net10.0-windows\Biblioteca.WinForms.genruntimeconfig.cache
 E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\Biblioteca.WinForms\obj\Debug\net10.0-windows\ref\Biblioteca.WinForms.dll
+E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\Biblioteca.WinForms\obj\Debug\net10.0-windows\Biblioteca.WinForms.FormPrincipal.resources
+E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\Biblioteca.WinForms\obj\Debug\net10.0-windows\Biblioteca.WinForms.FormReportes.resources
+E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\Biblioteca.WinForms\obj\Debug\net10.0-windows\Biblioteca.WinForms.FormClientes.resources
+E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\Biblioteca.WinForms\obj\Debug\net10.0-windows\Biblioteca.WinForms.FormAlquileres.resources

@@ -1,0 +1,10 @@
+A continuación se detallan los prompts y consultas principales utilizados con el asistente de IA para el desarrollo del proyecto de Gestión de Biblioteca:
+
+1. "1. Al menos una pantalla funcional en WinForms con operaciones ABM (Alta, Baja, Modificación y Consulta)." (Acompañado de capturas del Explorador de Soluciones).
+2. "deseo que realices el codigo para tener la pantalla funcional para mi gestion de bibliotecas" (Acompañado de captura del menú de consola).
+3. "1. Preparación de la Interfaz (Diseñador)... nose como realizar esto"
+4. "Podes proporcionarme un codigo para no hacer todo este proceso a mani"
+5. "en cual deberia pegar este codigo?" (Para resolver la ubicación del código del diseñador).
+6. Consultas para resolución de errores: Capturas de Lista de Errores (CS1061), errores de Entity Framework (DbContext sin DbSet), conflictos de archivos .resx duplicados (MSB35) y errores de SQLite ('no such table: Libros').
+7. "Funciono! Agregar validaciones, deja guardar libros sin autor."
+8. "Segunda versión: 1. Al menos 5 reportes/consultas. 2. Interfaz gráfica organizada y fácil de usar. 3. Validaciones básicas (campos obligatorios, datos numéricos, etc.). 4. Incluir prompts utilizados en un txt."
