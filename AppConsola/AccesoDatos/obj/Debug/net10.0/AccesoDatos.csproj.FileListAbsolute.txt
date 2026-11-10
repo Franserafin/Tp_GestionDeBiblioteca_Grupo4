@@ -25,3 +25,17 @@ E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_Gesti
 E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\refint\AccesoDatos.dll
 E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\AccesoDatos.pdb
 E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\ref\AccesoDatos.dll
+C:\Ingenieria de software\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\bin\Debug\net10.0\AccesoDatos.deps.json
+C:\Ingenieria de software\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\bin\Debug\net10.0\AccesoDatos.dll
+C:\Ingenieria de software\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\bin\Debug\net10.0\AccesoDatos.pdb
+C:\Ingenieria de software\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\AccesoDatos.csproj.AssemblyReference.cache
+C:\Ingenieria de software\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\AccesoDatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Ingenieria de software\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\AccesoDatos.AssemblyInfoInputs.cache
+C:\Ingenieria de software\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\AccesoDatos.AssemblyInfo.cs
+C:\Ingenieria de software\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Ingenieria de software\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\AccesoDatos.sourcelink.json
+C:\Ingenieria de software\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\AccesoDatos.dll
+C:\Ingenieria de software\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\refint\AccesoDatos.dll
+C:\Ingenieria de software\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\AccesoDatos.pdb
+C:\Ingenieria de software\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\ref\AccesoDatos.dll
+C:\Ingenieria de software\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\AccesoDa.B2719C34.Up2Date

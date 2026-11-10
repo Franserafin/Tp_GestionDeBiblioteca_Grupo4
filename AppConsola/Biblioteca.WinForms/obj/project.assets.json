@@ -1017,19 +1017,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\frans\\.nuget\\packages\\": {}
+    "C:\\Users\\Franco Serafin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\2do año Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\Biblioteca.WinForms.csproj",
+      "projectUniqueName": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\Biblioteca.WinForms.csproj",
       "projectName": "Biblioteca.WinForms",
-      "projectPath": "E:\\2do año Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\Biblioteca.WinForms.csproj",
-      "packagesPath": "C:\\Users\\frans\\.nuget\\packages\\",
-      "outputPath": "E:\\2do año Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\obj\\",
+      "projectPath": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\Biblioteca.WinForms.csproj",
+      "packagesPath": "C:\\Users\\Franco Serafin\\.nuget\\packages\\",
+      "outputPath": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\frans\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Franco Serafin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1044,8 +1044,8 @@
           "framework": "net10.0-windows7.0",
           "targetAlias": "net10.0-windows",
           "projectReferences": {
-            "E:\\2do año Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\AccesoDatos.csproj": {
-              "projectPath": "E:\\2do año Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\AccesoDatos.csproj"
+            "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\AccesoDatos.csproj": {
+              "projectPath": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\AccesoDatos.csproj"
             }
           }
         }
@@ -1060,7 +1060,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.400"
+      "SdkAnalysisLevel": "11.0.100"
     },
     "frameworks": {
       "net10.0-windows": {
@@ -1091,7 +1091,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.403/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\11.0.100/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
