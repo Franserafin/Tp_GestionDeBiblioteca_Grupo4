@@ -87,8 +87,7 @@
               "RelativeToolTip": "Biblioteca.WinForms\\FormPrincipal.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T21:34:13.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-10T21:34:13.787Z"
             },
             {
               "$type": "Document",
@@ -98,7 +97,7 @@
               "RelativeDocumentMoniker": "Biblioteca.WinForms\\FormReportes.cs",
               "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormReportes.cs",
               "RelativeToolTip": "Biblioteca.WinForms\\FormReportes.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-10T21:34:06.488Z",
               "EditorCaption": ""
@@ -111,7 +110,7 @@
               "RelativeDocumentMoniker": "Biblioteca.WinForms\\FormLibros.cs",
               "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormLibros.cs",
               "RelativeToolTip": "Biblioteca.WinForms\\FormLibros.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-10T21:33:55.304Z",
               "EditorCaption": ""
@@ -126,8 +125,7 @@
               "RelativeToolTip": "Biblioteca.WinForms\\FormClientes.cs",
               "ViewState": "AgIAAFcAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T21:33:55.206Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-10T21:33:55.206Z"
             },
             {
               "$type": "Document",
@@ -139,8 +137,7 @@
               "RelativeToolTip": "AccesoDatos\\Repositories\\GenericRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T21:33:40.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-10T21:33:40.084Z"
             },
             {
               "$type": "Document",
@@ -152,8 +149,7 @@
               "RelativeToolTip": "AccesoDatos\\Repositories\\IGenericRepository.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAABYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T21:33:39.926Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-10T21:33:39.926Z"
             },
             {
               "$type": "Document",
@@ -165,8 +161,7 @@
               "RelativeToolTip": "AccesoDatos\\Models\\Libro.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T21:33:17.439Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-10T21:33:17.439Z"
             },
             {
               "$type": "Document",
@@ -178,8 +173,7 @@
               "RelativeToolTip": "AccesoDatos\\Models\\Cliente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T21:33:17.226Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-10T21:33:17.226Z"
             },
             {
               "$type": "Document",
@@ -191,21 +185,19 @@
               "RelativeToolTip": "AccesoDatos\\Data\\AplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T21:33:00.189Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-10T21:33:00.189Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Biblioteca.WinForms",
+              "Title": "Biblioteca.WinForms.csproj",
               "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\Biblioteca.WinForms.csproj",
               "RelativeDocumentMoniker": "Biblioteca.WinForms\\Biblioteca.WinForms.csproj",
               "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\Biblioteca.WinForms.csproj",
               "RelativeToolTip": "Biblioteca.WinForms\\Biblioteca.WinForms.csproj",
               "ViewState": "AgIAAAsAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-11-10T21:32:59.828Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-10T21:32:59.828Z"
             },
             {
               "$type": "Document",
@@ -215,7 +207,7 @@
               "RelativeDocumentMoniker": "Biblioteca.WinForms\\FormAlquileres.cs",
               "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormAlquileres.cs",
               "RelativeToolTip": "Biblioteca.WinForms\\FormAlquileres.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAABBwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-03T02:16:31.28Z",
               "EditorCaption": ""
@@ -230,8 +222,7 @@
               "RelativeToolTip": "AccesoDatos\\Models\\Alquiler.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAIBQwA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T02:07:12.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-03T02:07:12.97Z"
             }
           ]
         }

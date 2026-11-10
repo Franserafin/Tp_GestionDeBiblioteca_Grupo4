@@ -25,4 +25,3 @@ E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_Gesti
 E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\refint\AccesoDatos.dll
 E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\AccesoDatos.pdb
 E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\ref\AccesoDatos.dll
-E:\2do año Desarrollo de software\Programacion I\Tp_Final_programacion\Tp_GestionDeBiblioteca_Grupo4\AppConsola\AccesoDatos\obj\Debug\net10.0\AccesoDa.B2719C34.Up2Date

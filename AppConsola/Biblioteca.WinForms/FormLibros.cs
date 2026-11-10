@@ -24,6 +24,15 @@ namespace Biblioteca.WinForms
         private void CargarLibros()
         {
             dgvLibros.DataSource = _libroRepository.ObtenerTodos();
+            ConfigurarColumnas();
+        }
+
+        private void ConfigurarColumnas()
+        {
+            dgvLibros.Columns["IdLibro"]!.Visible = false;
+            dgvLibros.Columns["IdCategoria"]!.Visible = false;
+            dgvLibros.Columns["Categoria"]!.Visible = false;
+            dgvLibros.Columns["Alquileres"]!.Visible = false;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)

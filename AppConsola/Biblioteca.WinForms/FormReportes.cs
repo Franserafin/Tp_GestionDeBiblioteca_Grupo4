@@ -25,6 +25,7 @@ namespace Biblioteca.WinForms
         {
             var libros = _libroRepository.ObtenerTodos();
             dgvReportes.DataSource = libros;
+            ConfigurarColumnasLibros();
         }
 
         // Reporte 2: Consulta de otra tabla (Clientes)
@@ -42,6 +43,7 @@ namespace Biblioteca.WinForms
                                           .OrderBy(l => l.Titulo)
                                           .ToList();
             dgvReportes.DataSource = librosOrdenados;
+            ConfigurarColumnasLibros();
         }
 
         // Reporte 4: Consulta combinada (Top 5 más recientes)
@@ -52,6 +54,7 @@ namespace Biblioteca.WinForms
                                         .Take(5)
                                         .ToList();
             dgvReportes.DataSource = ultimosLibros;
+            ConfigurarColumnasLibros();
         }
 
         // Reporte 5: Consulta con filtro dinámico (Where)
@@ -71,6 +74,15 @@ namespace Biblioteca.WinForms
                                      .ToList();
 
             dgvReportes.DataSource = resultados;
+            ConfigurarColumnasLibros();
+        }
+
+        private void ConfigurarColumnasLibros()
+        {
+            dgvReportes.Columns["Categoria"]!.Visible = false;
+            dgvReportes.Columns["Alquileres"]!.Visible = false;
+            dgvReportes.Columns["IdCategoria"]!.Visible = false;
+            dgvReportes.Columns["IdLibro"]!.Visible = false;
         }
     }
 }

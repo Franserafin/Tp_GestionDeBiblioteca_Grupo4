@@ -44,6 +44,15 @@ namespace Biblioteca.WinForms
         private void CargarAlquileres()
         {
             dgvAlquileres.DataSource = _alquilerRepository.ObtenerTodos();
+            ConfigurarColumnas();
+        }
+
+        private void ConfigurarColumnas()
+        {
+            dgvAlquileres.Columns["LibroId"]!.Visible = false;
+            dgvAlquileres.Columns["ClienteId"]!.Visible = false;
+            dgvAlquileres.Columns["Libro"]!.Visible = false;
+            dgvAlquileres.Columns["Cliente"]!.Visible = false;
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
