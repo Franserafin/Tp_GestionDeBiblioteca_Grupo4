@@ -7,6 +7,8 @@ namespace Biblioteca.WinForms
 {
     public partial class FormAlquileres : Form
     {
+        private const decimal PenalidadDiaria = 500m;
+
         private readonly IGenericRepository<Alquiler> _alquilerRepository;
         private readonly IGenericRepository<Libro> _libroRepository;
         private readonly IGenericRepository<Cliente> _clienteRepository;
@@ -53,6 +55,7 @@ namespace Biblioteca.WinForms
             dgvAlquileres.Columns["ClienteId"]!.Visible = false;
             dgvAlquileres.Columns["Libro"]!.Visible = false;
             dgvAlquileres.Columns["Cliente"]!.Visible = false;
+            dgvAlquileres.Columns["FechaDevolucion"]!.Visible = false;
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -63,12 +66,30 @@ namespace Biblioteca.WinForms
                 return;
             }
 
+            if (!decimal.TryParse(txtCostoReserva.Text, out decimal costoReserva) || costoReserva < 0)
+            {
+                MessageBox.Show("Ingrese un costo de reserva válido y no negativo.");
+                txtCostoReserva.Focus();
+                return;
+            }
+
+            DateTime fechaDevolucionEsperada = dtpFechaDevolucion.Value;
+            if (fechaDevolucionEsperada.Date < DateTime.Today)
+            {
+                MessageBox.Show("La fecha esperada de devolución no puede ser anterior a hoy.");
+                return;
+            }
+
             var nuevoAlquiler = new Alquiler
             {
                 LibroId = Convert.ToInt32(cmbLibro.SelectedValue),
                 ClienteId = Convert.ToInt32(cmbCliente.SelectedValue),
                 FechaPrestamo = DateTime.Now,
-                FechaDevolucion = dtpFechaDevolucion.Value,
+                FechaDevolucion = fechaDevolucionEsperada,
+                CostoReserva = costoReserva,
+                FechaDevolucionEsperada = fechaDevolucionEsperada,
+                FechaDevolucionReal = null,
+                MontoPenalidad = 0m,
                 Devuelto = false
             };
 
@@ -94,6 +115,11 @@ namespace Biblioteca.WinForms
 
                 if (alquiler != null && !alquiler.Devuelto)
                 {
+                    alquiler.FechaDevolucionReal = DateTime.Now;
+                    int diasAtraso = Math.Max(
+                        0,
+                        (alquiler.FechaDevolucionReal.Value.Date - alquiler.FechaDevolucionEsperada.Date).Days);
+                    alquiler.MontoPenalidad = diasAtraso * PenalidadDiaria;
                     alquiler.Devuelto = true;
                     _alquilerRepository.Modificar(alquiler);
 
@@ -104,7 +130,16 @@ namespace Biblioteca.WinForms
                         _libroRepository.Modificar(libro);
                     }
 
-                    MessageBox.Show("Libro marcado como devuelto.");
+                    if (diasAtraso > 0)
+                    {
+                        MessageBox.Show(
+                            $"Libro devuelto con {diasAtraso} día(s) de atraso. Penalidad a cobrar: ${alquiler.MontoPenalidad:N2}.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Libro marcado como devuelto. No se aplica penalidad.");
+                    }
+
                     CargarAlquileres();
                 }
                 else

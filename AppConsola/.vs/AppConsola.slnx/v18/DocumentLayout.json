@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|c:\\ingenieria de software\\tp_gestiondebiblioteca_grupo4\\appconsola\\accesodatos\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|solutionrelative:accesodatos\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{41F0AF44-557C-4931-A921-F5F2FCCB20AE}|Biblioteca.WinForms\\Biblioteca.WinForms.csproj|c:\\ingenieria de software\\tp_gestiondebiblioteca_grupo4\\appconsola\\biblioteca.winforms\\formreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{41F0AF44-557C-4931-A921-F5F2FCCB20AE}|Biblioteca.WinForms\\Biblioteca.WinForms.csproj|solutionrelative:biblioteca.winforms\\formreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -43,16 +47,16 @@
       "RelativeMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|solutionrelative:accesodatos\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|c:\\ingenieria de software\\tp_gestiondebiblioteca_grupo4\\appconsola\\accesodatos\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC8B56AF-C884-1B79-740F-D48CDB7C9D05}|AccesoDatos\\AccesoDatos.csproj|solutionrelative:accesodatos\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{41F0AF44-557C-4931-A921-F5F2FCCB20AE}|Biblioteca.WinForms\\Biblioteca.WinForms.csproj|c:\\ingenieria de software\\tp_gestiondebiblioteca_grupo4\\appconsola\\biblioteca.winforms\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{41F0AF44-557C-4931-A921-F5F2FCCB20AE}|Biblioteca.WinForms\\Biblioteca.WinForms.csproj|solutionrelative:biblioteca.winforms\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{41F0AF44-557C-4931-A921-F5F2FCCB20AE}|Biblioteca.WinForms\\Biblioteca.WinForms.csproj|c:\\ingenieria de software\\tp_gestiondebiblioteca_grupo4\\appconsola\\biblioteca.winforms\\formlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{41F0AF44-557C-4931-A921-F5F2FCCB20AE}|Biblioteca.WinForms\\Biblioteca.WinForms.csproj|solutionrelative:biblioteca.winforms\\formlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F0AF44-557C-4931-A921-F5F2FCCB20AE}|Biblioteca.WinForms\\Biblioteca.WinForms.csproj|c:\\ingenieria de software\\tp_gestiondebiblioteca_grupo4\\appconsola\\biblioteca.winforms\\formalquileres.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F0AF44-557C-4931-A921-F5F2FCCB20AE}|Biblioteca.WinForms\\Biblioteca.WinForms.csproj|solutionrelative:biblioteca.winforms\\formalquileres.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,37 +66,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\Program.cs",
-              "RelativeDocumentMoniker": "Biblioteca.WinForms\\Program.cs",
-              "ToolTip": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\Program.cs",
-              "RelativeToolTip": "Biblioteca.WinForms\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T21:34:26.965Z",
-              "OwnerCaption": "%2"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FormPrincipal.cs",
-              "DocumentMoniker": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormPrincipal.cs",
-              "RelativeDocumentMoniker": "Biblioteca.WinForms\\FormPrincipal.cs",
-              "ToolTip": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormPrincipal.cs",
-              "RelativeToolTip": "Biblioteca.WinForms\\FormPrincipal.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T21:34:13.787Z",
-              "OwnerCaption": "%2"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "FormReportes.cs",
               "DocumentMoniker": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormReportes.cs",
               "RelativeDocumentMoniker": "Biblioteca.WinForms\\FormReportes.cs",
@@ -106,6 +84,32 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\Program.cs",
+              "RelativeDocumentMoniker": "Biblioteca.WinForms\\Program.cs",
+              "ToolTip": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\Program.cs",
+              "RelativeToolTip": "Biblioteca.WinForms\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T21:34:26.965Z",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormPrincipal.cs",
+              "DocumentMoniker": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormPrincipal.cs",
+              "RelativeDocumentMoniker": "Biblioteca.WinForms\\FormPrincipal.cs",
+              "ToolTip": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormPrincipal.cs",
+              "RelativeToolTip": "Biblioteca.WinForms\\FormPrincipal.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T21:34:13.787Z",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 12,
               "Title": "FormLibros.cs",
               "DocumentMoniker": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormLibros.cs",
@@ -115,6 +119,34 @@
               "ViewState": "AgIAACIAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-10T21:33:55.304Z",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "AccesoDatos\\Repositories\\GenericRepository.cs",
+              "ToolTip": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "AccesoDatos\\Repositories\\GenericRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T21:33:40.084Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FormAlquileres.Designer.cs",
+              "DocumentMoniker": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormAlquileres.Designer.cs",
+              "RelativeDocumentMoniker": "Biblioteca.WinForms\\FormAlquileres.Designer.cs",
+              "ToolTip": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormAlquileres.Designer.cs",
+              "RelativeToolTip": "Biblioteca.WinForms\\FormAlquileres.Designer.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T23:14:05.864Z",
+              "EditorCaption": "",
               "OwnerCaption": "%2"
             },
             {
@@ -133,19 +165,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Repositories\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "AccesoDatos\\Repositories\\GenericRepository.cs",
-              "ToolTip": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Repositories\\GenericRepository.cs",
-              "RelativeToolTip": "AccesoDatos\\Repositories\\GenericRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T21:33:40.084Z",
-              "OwnerCaption": "%2"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "IGenericRepository.cs",
               "DocumentMoniker": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Repositories\\IGenericRepository.cs",
               "RelativeDocumentMoniker": "AccesoDatos\\Repositories\\IGenericRepository.cs",
@@ -158,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Libro.cs",
               "DocumentMoniker": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Models\\Libro.cs",
               "RelativeDocumentMoniker": "AccesoDatos\\Models\\Libro.cs",
@@ -171,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Models\\Cliente.cs",
               "RelativeDocumentMoniker": "AccesoDatos\\Models\\Cliente.cs",
@@ -184,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AplicationDbContext.cs",
               "DocumentMoniker": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Data\\AplicationDbContext.cs",
               "RelativeDocumentMoniker": "AccesoDatos\\Data\\AplicationDbContext.cs",
@@ -197,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Biblioteca.WinForms.csproj",
               "DocumentMoniker": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\Biblioteca.WinForms.csproj",
               "RelativeDocumentMoniker": "Biblioteca.WinForms\\Biblioteca.WinForms.csproj",
@@ -210,28 +229,30 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "FormAlquileres.cs",
               "DocumentMoniker": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormAlquileres.cs",
               "RelativeDocumentMoniker": "Biblioteca.WinForms\\FormAlquileres.cs",
               "ToolTip": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormAlquileres.cs",
               "RelativeToolTip": "Biblioteca.WinForms\\FormAlquileres.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAIBJwBYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAEBTwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-03T02:16:31.28Z",
+              "EditorCaption": "",
               "OwnerCaption": "%2"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Alquiler.cs",
               "DocumentMoniker": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Models\\Alquiler.cs",
               "RelativeDocumentMoniker": "AccesoDatos\\Models\\Alquiler.cs",
               "ToolTip": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Models\\Alquiler.cs",
               "RelativeToolTip": "AccesoDatos\\Models\\Alquiler.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAIBQwA0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAIBWwBEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-03T02:07:12.97Z",
+              "EditorCaption": "",
               "OwnerCaption": "%2"
             }
           ]

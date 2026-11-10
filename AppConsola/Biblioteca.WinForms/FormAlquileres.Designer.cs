@@ -19,11 +19,13 @@
             this.cmbLibro = new System.Windows.Forms.ComboBox();
             this.cmbCliente = new System.Windows.Forms.ComboBox();
             this.dtpFechaDevolucion = new System.Windows.Forms.DateTimePicker();
+            this.txtCostoReserva = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnDevolver = new System.Windows.Forms.Button();
             this.lblLibro = new System.Windows.Forms.Label();
             this.lblCliente = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
+            this.lblCostoReserva = new System.Windows.Forms.Label();
 
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlquileres)).BeginInit();
             this.SuspendLayout();
@@ -75,6 +77,18 @@
             this.dtpFechaDevolucion.Name = "dtpFechaDevolucion";
             this.dtpFechaDevolucion.Size = new System.Drawing.Size(180, 23);
 
+            // lblCostoReserva
+            this.lblCostoReserva.AutoSize = true;
+            this.lblCostoReserva.Location = new System.Drawing.Point(12, 335);
+            this.lblCostoReserva.Name = "lblCostoReserva";
+            this.lblCostoReserva.Size = new System.Drawing.Size(78, 15);
+            this.lblCostoReserva.Text = "Costo reserva:";
+
+            // txtCostoReserva
+            this.txtCostoReserva.Location = new System.Drawing.Point(90, 332);
+            this.txtCostoReserva.Name = "txtCostoReserva";
+            this.txtCostoReserva.Size = new System.Drawing.Size(180, 23);
+
             // btnRegistrar
             this.btnRegistrar.Location = new System.Drawing.Point(320, 225);
             this.btnRegistrar.Name = "btnRegistrar";
@@ -92,9 +106,11 @@
             // FormAlquileres
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(580, 340);
+            this.ClientSize = new System.Drawing.Size(580, 375);
             this.Controls.Add(this.btnDevolver);
             this.Controls.Add(this.btnRegistrar);
+            this.Controls.Add(this.txtCostoReserva);
+            this.Controls.Add(this.lblCostoReserva);
             this.Controls.Add(this.dtpFechaDevolucion);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.cmbCliente);
@@ -116,10 +132,12 @@
         private System.Windows.Forms.ComboBox cmbLibro;
         private System.Windows.Forms.ComboBox cmbCliente;
         private System.Windows.Forms.DateTimePicker dtpFechaDevolucion;
+        private System.Windows.Forms.TextBox txtCostoReserva;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btnDevolver;
         private System.Windows.Forms.Label lblLibro;
         private System.Windows.Forms.Label lblCliente;
         private System.Windows.Forms.Label lblFecha;
+        private System.Windows.Forms.Label lblCostoReserva;
     }
 }

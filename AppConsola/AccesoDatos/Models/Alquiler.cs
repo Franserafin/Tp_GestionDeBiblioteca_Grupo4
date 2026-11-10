@@ -7,6 +7,10 @@
         public int ClienteId { get; set; }
         public DateTime FechaPrestamo { get; set; }
         public DateTime FechaDevolucion { get; set; }
+        public decimal CostoReserva { get; set; }
+        public DateTime FechaDevolucionEsperada { get; set; }
+        public DateTime? FechaDevolucionReal { get; set; }
+        public decimal MontoPenalidad { get; set; }
         public bool Devuelto { get; set; }
 
         public Libro Libro { get; set; } = null!;
