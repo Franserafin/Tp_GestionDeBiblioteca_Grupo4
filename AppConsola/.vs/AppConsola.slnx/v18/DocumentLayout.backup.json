@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{41F0AF44-557C-4931-A921-F5F2FCCB20AE}|Biblioteca.WinForms\\Biblioteca.WinForms.csproj|e:\\2do a\u00F1o desarrollo de software\\programacion i\\tp_final_programacion\\tp_gestiondebiblioteca_grupo4\\appconsola\\biblioteca.winforms\\formreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F0AF44-557C-4931-A921-F5F2FCCB20AE}|Biblioteca.WinForms\\Biblioteca.WinForms.csproj|solutionrelative:biblioteca.winforms\\formreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F0AF44-557C-4931-A921-F5F2FCCB20AE}|Biblioteca.WinForms\\Biblioteca.WinForms.csproj|e:\\2do a\u00F1o desarrollo de software\\programacion i\\tp_final_programacion\\tp_gestiondebiblioteca_grupo4\\appconsola\\biblioteca.winforms\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F0AF44-557C-4931-A921-F5F2FCCB20AE}|Biblioteca.WinForms\\Biblioteca.WinForms.csproj|solutionrelative:biblioteca.winforms\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{41F0AF44-557C-4931-A921-F5F2FCCB20AE}|Biblioteca.WinForms\\Biblioteca.WinForms.csproj|e:\\2do a\u00F1o desarrollo de software\\programacion i\\tp_final_programacion\\tp_gestiondebiblioteca_grupo4\\appconsola\\biblioteca.winforms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{41F0AF44-557C-4931-A921-F5F2FCCB20AE}|Biblioteca.WinForms\\Biblioteca.WinForms.csproj|solutionrelative:biblioteca.winforms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -45,14 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{41F0AF44-557C-4931-A921-F5F2FCCB20AE}|Biblioteca.WinForms\\Biblioteca.WinForms.csproj|e:\\2do a\u00F1o desarrollo de software\\programacion i\\tp_final_programacion\\tp_gestiondebiblioteca_grupo4\\appconsola\\biblioteca.winforms\\formlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{41F0AF44-557C-4931-A921-F5F2FCCB20AE}|Biblioteca.WinForms\\Biblioteca.WinForms.csproj|solutionrelative:biblioteca.winforms\\formlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41F0AF44-557C-4931-A921-F5F2FCCB20AE}|Biblioteca.WinForms\\Biblioteca.WinForms.csproj|e:\\2do a\u00F1o desarrollo de software\\programacion i\\tp_final_programacion\\tp_gestiondebiblioteca_grupo4\\appconsola\\biblioteca.winforms\\formreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41F0AF44-557C-4931-A921-F5F2FCCB20AE}|Biblioteca.WinForms\\Biblioteca.WinForms.csproj|solutionrelative:biblioteca.winforms\\formreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41F0AF44-557C-4931-A921-F5F2FCCB20AE}|Biblioteca.WinForms\\Biblioteca.WinForms.csproj|e:\\2do a\u00F1o desarrollo de software\\programacion i\\tp_final_programacion\\tp_gestiondebiblioteca_grupo4\\appconsola\\biblioteca.winforms\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41F0AF44-557C-4931-A921-F5F2FCCB20AE}|Biblioteca.WinForms\\Biblioteca.WinForms.csproj|solutionrelative:biblioteca.winforms\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,11 +62,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\Program.cs",
               "RelativeDocumentMoniker": "Biblioteca.WinForms\\Program.cs",
@@ -79,32 +79,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 1,
               "Title": "FormPrincipal.cs",
               "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormPrincipal.cs",
               "RelativeDocumentMoniker": "Biblioteca.WinForms\\FormPrincipal.cs",
               "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormPrincipal.cs",
               "RelativeToolTip": "Biblioteca.WinForms\\FormPrincipal.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T21:34:13.787Z"
+              "WhenOpened": "2026-11-10T21:34:13.787Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
               "Title": "FormReportes.cs",
               "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormReportes.cs",
               "RelativeDocumentMoniker": "Biblioteca.WinForms\\FormReportes.cs",
               "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormReportes.cs",
               "RelativeToolTip": "Biblioteca.WinForms\\FormReportes.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-10T21:34:06.488Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "FormLibros.cs",
               "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormLibros.cs",
               "RelativeDocumentMoniker": "Biblioteca.WinForms\\FormLibros.cs",
@@ -112,12 +113,11 @@
               "RelativeToolTip": "Biblioteca.WinForms\\FormLibros.cs",
               "ViewState": "AgIAACIAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T21:33:55.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-10T21:33:55.304Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "FormClientes.cs",
               "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormClientes.cs",
               "RelativeDocumentMoniker": "Biblioteca.WinForms\\FormClientes.cs",
@@ -129,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Repositories\\GenericRepository.cs",
               "RelativeDocumentMoniker": "AccesoDatos\\Repositories\\GenericRepository.cs",
@@ -141,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "IGenericRepository.cs",
               "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Repositories\\IGenericRepository.cs",
               "RelativeDocumentMoniker": "AccesoDatos\\Repositories\\IGenericRepository.cs",
@@ -153,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Libro.cs",
               "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Models\\Libro.cs",
               "RelativeDocumentMoniker": "AccesoDatos\\Models\\Libro.cs",
@@ -165,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Cliente.cs",
               "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Models\\Cliente.cs",
               "RelativeDocumentMoniker": "AccesoDatos\\Models\\Cliente.cs",
@@ -177,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "AplicationDbContext.cs",
               "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Data\\AplicationDbContext.cs",
               "RelativeDocumentMoniker": "AccesoDatos\\Data\\AplicationDbContext.cs",
@@ -189,7 +189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Biblioteca.WinForms.csproj",
               "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\Biblioteca.WinForms.csproj",
               "RelativeDocumentMoniker": "Biblioteca.WinForms\\Biblioteca.WinForms.csproj",
@@ -201,20 +201,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "FormAlquileres.cs",
               "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormAlquileres.cs",
               "RelativeDocumentMoniker": "Biblioteca.WinForms\\FormAlquileres.cs",
               "ToolTip": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormAlquileres.cs",
               "RelativeToolTip": "Biblioteca.WinForms\\FormAlquileres.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAABBwBYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFAAAAAAAAAAAIBJwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-03T02:16:31.28Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Alquiler.cs",
               "DocumentMoniker": "E:\\2do a\u00F1o Desarrollo de software\\Programacion I\\Tp_Final_programacion\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\AccesoDatos\\Models\\Alquiler.cs",
               "RelativeDocumentMoniker": "AccesoDatos\\Models\\Alquiler.cs",

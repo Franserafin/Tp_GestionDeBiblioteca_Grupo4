@@ -1,0 +1,106 @@
+﻿using System;
+using System.Windows.Forms;
+using AccesoDatos.Models;
+using AccesoDatos.Repositories;
+
+namespace Biblioteca.WinForms
+{
+    public partial class FormAlquileres : Form
+    {
+        private readonly IGenericRepository<Alquiler> _alquilerRepository;
+        private readonly IGenericRepository<Libro> _libroRepository;
+        private readonly IGenericRepository<Cliente> _clienteRepository;
+
+        public FormAlquileres(
+            IGenericRepository<Alquiler> alquilerRepository,
+            IGenericRepository<Libro> libroRepository,
+            IGenericRepository<Cliente> clienteRepository)
+        {
+            InitializeComponent();
+            _alquilerRepository = alquilerRepository;
+            _libroRepository = libroRepository;
+            _clienteRepository = clienteRepository;
+        }
+
+        private void FormAlquileres_Load(object sender, EventArgs e)
+        {
+            CargarCombos();
+            CargarAlquileres();
+        }
+
+        private void CargarCombos()
+        {
+            // Cargar Libros en el ComboBox
+            cmbLibro.DataSource = _libroRepository.ObtenerTodos();
+            cmbLibro.DisplayMember = "Titulo";
+            cmbLibro.ValueMember = "Id";
+
+            // Cargar Clientes en el ComboBox
+            cmbCliente.DataSource = _clienteRepository.ObtenerTodos();
+            cmbCliente.DisplayMember = "Nombre";
+            cmbCliente.ValueMember = "Id";
+        }
+
+        private void CargarAlquileres()
+        {
+            dgvAlquileres.DataSource = _alquilerRepository.ObtenerTodos();
+            ConfigurarColumnas();
+        }
+
+        private void ConfigurarColumnas()
+        {
+            dgvAlquileres.Columns["LibroId"]!.Visible = false;
+            dgvAlquileres.Columns["ClienteId"]!.Visible = false;
+            dgvAlquileres.Columns["Libro"]!.Visible = false;
+            dgvAlquileres.Columns["Cliente"]!.Visible = false;
+        }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            if (cmbLibro.SelectedValue == null || cmbCliente.SelectedValue == null)
+            {
+                MessageBox.Show("Debe seleccionar un libro y un cliente.");
+                return;
+            }
+
+            var nuevoAlquiler = new Alquiler
+            {
+                LibroId = Convert.ToInt32(cmbLibro.SelectedValue),
+                ClienteId = Convert.ToInt32(cmbCliente.SelectedValue),
+                FechaPrestamo = DateTime.Now,
+                FechaDevolucion = dtpFechaDevolucion.Value,
+                Devuelto = false
+            };
+
+            _alquilerRepository.Agregar(nuevoAlquiler);
+
+            MessageBox.Show("Alquiler registrado con éxito.");
+            CargarAlquileres();
+        }
+
+        private void btnDevolver_Click(object sender, EventArgs e)
+        {
+            if (dgvAlquileres.CurrentRow != null)
+            {
+                int idAlquiler = (int)dgvAlquileres.CurrentRow.Cells["Id"].Value;
+                var alquiler = _alquilerRepository.ObtenerPorId(idAlquiler);
+
+                if (alquiler != null && !alquiler.Devuelto)
+                {
+                    alquiler.Devuelto = true;
+                    _alquilerRepository.Modificar(alquiler);
+                    MessageBox.Show("Libro marcado como devuelto.");
+                    CargarAlquileres();
+                }
+                else
+                {
+                    MessageBox.Show("El alquiler ya fue devuelto o no es válido.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un alquiler de la tabla.");
+            }
+        }
+    }
+}

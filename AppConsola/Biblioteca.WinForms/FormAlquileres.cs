@@ -74,6 +74,13 @@ namespace Biblioteca.WinForms
 
             _alquilerRepository.Agregar(nuevoAlquiler);
 
+            var libro = _libroRepository.ObtenerPorId(nuevoAlquiler.LibroId);
+            if (libro != null)
+            {
+                libro.Estado = "No disponible";
+                _libroRepository.Modificar(libro);
+            }
+
             MessageBox.Show("Alquiler registrado con éxito.");
             CargarAlquileres();
         }
@@ -89,6 +96,14 @@ namespace Biblioteca.WinForms
                 {
                     alquiler.Devuelto = true;
                     _alquilerRepository.Modificar(alquiler);
+
+                    var libro = _libroRepository.ObtenerPorId(alquiler.LibroId);
+                    if (libro != null)
+                    {
+                        libro.Estado = "Disponible";
+                        _libroRepository.Modificar(libro);
+                    }
+
                     MessageBox.Show("Libro marcado como devuelto.");
                     CargarAlquileres();
                 }
