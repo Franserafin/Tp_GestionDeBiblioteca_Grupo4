@@ -1,0 +1,150 @@
+﻿using System;
+using System.Windows.Forms;
+using AccesoDatos.Models;
+using AccesoDatos.Repositories;
+
+namespace Biblioteca.WinForms
+{
+    public partial class FormClientes : Form
+    {
+        private readonly IGenericRepository<Cliente> _clienteRepository;
+
+        public FormClientes(IGenericRepository<Cliente> clienteRepository)
+        {
+            InitializeComponent();
+            _clienteRepository = clienteRepository;
+        }
+
+        private void FormClientes_Load(object sender, EventArgs e)
+        {
+            CargarClientes();
+        }
+
+        private void CargarClientes()
+        {
+            dgvClientes.DataSource = _clienteRepository.ObtenerTodos();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            // Validaciones básicas requeridas
+            if (string.IsNullOrWhiteSpace(txtNombre.Text))
+            {
+                MessageBox.Show("El nombre es obligatorio.");
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtDocumento.Text))
+            {
+                MessageBox.Show("El documento es obligatorio.");
+                return;
+            }
+
+            // Opcional: Validar que el documento sea numérico
+            if (!int.TryParse(txtDocumento.Text, out _))
+            {
+                MessageBox.Show("El documento debe contener solo números.");
+                return;
+            }
+
+            var nuevoCliente = new Cliente
+            {
+                Nombre = txtNombre.Text,
+                Dni = txtDocumento.Text
+            };
+
+            _clienteRepository.Agregar(nuevoCliente);
+
+            MessageBox.Show("Cliente agregado exitosamente.");
+            LimpiarCampos();
+            CargarClientes();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtId.Text))
+            {
+                MessageBox.Show("Seleccione un cliente de la lista para modificar.");
+                return;
+            }
+
+            if (!int.TryParse(txtId.Text, out int id))
+            {
+                MessageBox.Show("El cliente seleccionado no es válido.");
+                return;
+            }
+
+            var cliente = _clienteRepository.ObtenerPorId(id);
+
+            if (cliente != null)
+            {
+                if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtDocumento.Text))
+                {
+                    MessageBox.Show("El nombre y el documento son obligatorios.");
+                    return;
+                }
+
+                cliente.Nombre = txtNombre.Text;
+                // cliente.Documento = txtDocumento.Text; // Ajusta según tu modelo
+
+                _context.SaveChanges();
+                MessageBox.Show("Cliente modificado exitosamente.");
+                LimpiarCampos();
+                CargarClientes();
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtId.Text))
+            {
+                MessageBox.Show("Seleccione un cliente de la lista para eliminar.");
+                return;
+            }
+
+            if (!int.TryParse(txtId.Text, out int id))
+            {
+                MessageBox.Show("El cliente seleccionado no es válido.");
+                return;
+            }
+
+            var cliente = _clienteRepository.ObtenerPorId(id);
+
+            if (cliente != null)
+            {
+                var confirmacion = MessageBox.Show("¿Está seguro de eliminar este cliente?", "Confirmar", MessageBoxButtons.YesNo);
+                if (confirmacion == DialogResult.Yes)
+                {
+                    _clienteRepository.Eliminar(id);
+                    MessageBox.Show("Cliente eliminado.");
+                    LimpiarCampos();
+                    CargarClientes();
+                }
+            }
+        }
+
+        private void dgvClientes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow fila = dgvClientes.Rows[e.RowIndex];
+
+                txtId.Text = fila.Cells["Id"].Value?.ToString();
+                txtNombre.Text = fila.Cells["Nombre"].Value?.ToString();
+                txtDocumento.Text = fila.Cells["Dni"].Value?.ToString();
+            }
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
+        }
+
+        private void LimpiarCampos()
+        {
+            txtId.Clear();
+            txtNombre.Clear();
+            txtDocumento.Clear();
+        }
+    }
+}

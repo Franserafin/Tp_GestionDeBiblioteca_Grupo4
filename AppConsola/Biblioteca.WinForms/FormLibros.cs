@@ -1,21 +1,19 @@
 using System;
-using System.Linq;
 using System.Windows.Forms;
-using AccesoDatos.Data;
 using AccesoDatos.Models;
+using AccesoDatos.Repositories;
 
 namespace Biblioteca.WinForms
 {
     // Es CRÍTICO que diga ": Form" para que herede las propiedades visuales y se borren los errores
     public partial class FormLibros : Form
     {
-        private AplicationDbContext _context;
+        private readonly IGenericRepository<Libro> _libroRepository;
 
-        public FormLibros()
+        public FormLibros(IGenericRepository<Libro> libroRepository)
         {
             InitializeComponent();
-            _context = new AplicationDbContext();
-            _context.Database.EnsureCreated();
+            _libroRepository = libroRepository;
         }
 
         private void FormLibros_Load(object sender, EventArgs e)
@@ -25,7 +23,7 @@ namespace Biblioteca.WinForms
 
         private void CargarLibros()
         {
-            dgvLibros.DataSource = _context.Libros.ToList();
+            dgvLibros.DataSource = _libroRepository.ObtenerTodos();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -49,8 +47,7 @@ namespace Biblioteca.WinForms
                 Autor = txtAutor.Text // Asegúrate de que esta línea no esté comentada
             };
 
-            _context.Libros.Add(nuevoLibro);
-            _context.SaveChanges();
+            _libroRepository.Agregar(nuevoLibro);
 
             MessageBox.Show("Libro agregado exitosamente.");
             LimpiarCampos();
@@ -79,14 +76,14 @@ namespace Biblioteca.WinForms
             }
 
             int id = int.Parse(txtId.Text);
-            var libro = _context.Libros.FirstOrDefault(l => l.Id == id);
+            var libro = _libroRepository.ObtenerPorId(id);
 
             if (libro != null)
             {
                 libro.Titulo = txtTitulo.Text;
                 libro.Autor = txtAutor.Text; // Asegúrate de que esta línea no esté comentada
 
-                _context.SaveChanges();
+                _libroRepository.Modificar(libro);
                 MessageBox.Show("Libro modificado exitosamente.");
                 LimpiarCampos();
                 CargarLibros();
@@ -102,15 +99,14 @@ namespace Biblioteca.WinForms
             }
 
             int id = int.Parse(txtId.Text);
-            var libro = _context.Libros.FirstOrDefault(l => l.Id == id);
+            var libro = _libroRepository.ObtenerPorId(id);
 
             if (libro != null)
             {
                 var confirmacion = MessageBox.Show("¿Está seguro de eliminar este libro?", "Confirmar", MessageBoxButtons.YesNo);
                 if (confirmacion == DialogResult.Yes)
                 {
-                    _context.Libros.Remove(libro);
-                    _context.SaveChanges();
+                    _libroRepository.Eliminar(id);
                     MessageBox.Show("Libro eliminado.");
                     LimpiarCampos();
                     CargarLibros();
@@ -126,7 +122,7 @@ namespace Biblioteca.WinForms
 
                 txtId.Text = fila.Cells["Id"].Value?.ToString();
                 txtTitulo.Text = fila.Cells["Titulo"].Value?.ToString();
-                // txtAutor.Text = fila.Cells["Autor"].Value?.ToString();
+                txtAutor.Text = fila.Cells["Autor"].Value?.ToString();
             }
         }
 
@@ -139,7 +135,7 @@ namespace Biblioteca.WinForms
         {
             txtId.Clear();
             txtTitulo.Clear();
-            // txtAutor.Clear();
+            txtAutor.Clear();
         }
     }
 }

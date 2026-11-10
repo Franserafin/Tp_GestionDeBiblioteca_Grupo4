@@ -1,20 +1,18 @@
 ﻿using System;
-using System.Linq;
 using System.Windows.Forms;
-using AccesoDatos.Data;
 using AccesoDatos.Models;
+using AccesoDatos.Repositories;
 
 namespace Biblioteca.WinForms
 {
     public partial class FormClientes : Form
     {
-        private AplicationDbContext _context;
+        private readonly IGenericRepository<Cliente> _clienteRepository;
 
-        public FormClientes()
+        public FormClientes(IGenericRepository<Cliente> clienteRepository)
         {
             InitializeComponent();
-            _context = new AplicationDbContext();
-            _context.Database.EnsureCreated();
+            _clienteRepository = clienteRepository;
         }
 
         private void FormClientes_Load(object sender, EventArgs e)
@@ -24,7 +22,7 @@ namespace Biblioteca.WinForms
 
         private void CargarClientes()
         {
-            dgvClientes.DataSource = _context.Clientes.ToList();
+            dgvClientes.DataSource = _clienteRepository.ObtenerTodos();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -51,13 +49,11 @@ namespace Biblioteca.WinForms
 
             var nuevoCliente = new Cliente
             {
-                // ATENCIÓN: Asegúrate de que estas propiedades existan en tu clase Cliente
                 Nombre = txtNombre.Text,
-                // Documento = txtDocumento.Text // Descomenta o ajusta según tu modelo (ej. Dni = txtDocumento.Text)
+                Dni = txtDocumento.Text
             };
 
-            _context.Clientes.Add(nuevoCliente);
-            _context.SaveChanges();
+            _clienteRepository.Agregar(nuevoCliente);
 
             MessageBox.Show("Cliente agregado exitosamente.");
             LimpiarCampos();
@@ -72,8 +68,13 @@ namespace Biblioteca.WinForms
                 return;
             }
 
-            int id = int.Parse(txtId.Text);
-            var cliente = _context.Clientes.FirstOrDefault(c => c.id == id);
+            if (!int.TryParse(txtId.Text, out int id))
+            {
+                MessageBox.Show("El cliente seleccionado no es válido.");
+                return;
+            }
+
+            var cliente = _clienteRepository.ObtenerPorId(id);
 
             if (cliente != null)
             {
@@ -84,9 +85,9 @@ namespace Biblioteca.WinForms
                 }
 
                 cliente.Nombre = txtNombre.Text;
-                // cliente.Documento = txtDocumento.Text; // Ajusta según tu modelo
+                cliente.Dni = txtDocumento.Text;
 
-                _context.SaveChanges();
+                _clienteRepository.Modificar(cliente);
                 MessageBox.Show("Cliente modificado exitosamente.");
                 LimpiarCampos();
                 CargarClientes();
@@ -101,16 +102,20 @@ namespace Biblioteca.WinForms
                 return;
             }
 
-            int id = int.Parse(txtId.Text);
-            var cliente = _context.Clientes.FirstOrDefault(c => c.id == id);
+            if (!int.TryParse(txtId.Text, out int id))
+            {
+                MessageBox.Show("El cliente seleccionado no es válido.");
+                return;
+            }
+
+            var cliente = _clienteRepository.ObtenerPorId(id);
 
             if (cliente != null)
             {
                 var confirmacion = MessageBox.Show("¿Está seguro de eliminar este cliente?", "Confirmar", MessageBoxButtons.YesNo);
                 if (confirmacion == DialogResult.Yes)
                 {
-                    _context.Clientes.Remove(cliente);
-                    _context.SaveChanges();
+                    _clienteRepository.Eliminar(id);
                     MessageBox.Show("Cliente eliminado.");
                     LimpiarCampos();
                     CargarClientes();
@@ -126,7 +131,7 @@ namespace Biblioteca.WinForms
 
                 txtId.Text = fila.Cells["Id"].Value?.ToString();
                 txtNombre.Text = fila.Cells["Nombre"].Value?.ToString();
-                // txtDocumento.Text = fila.Cells["Documento"].Value?.ToString(); // Ajusta según tu modelo
+                txtDocumento.Text = fila.Cells["Dni"].Value?.ToString();
             }
         }
 

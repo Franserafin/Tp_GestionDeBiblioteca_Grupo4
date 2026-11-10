@@ -1,18 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AccesoDatos.Models
+﻿namespace AccesoDatos.Models
 {
     public class Cliente
     {
-      public int id { get; set; }
-        public int IdCliente { get; set; }
-
-        public string Nombre { get; set; }
-        public string Dni { get; set; }
-        public string Telefono { get; set; }
-
-        public ICollection<Alquiler> Alquileres { get; set; } = new List<Alquiler>();
+        public int Id { get; set; }
+        public string Nombre { get; set; } = string.Empty;
+        public string Dni { get; set; } = string.Empty;
     }
 }

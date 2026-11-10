@@ -11,7 +11,7 @@ namespace AccesoDatos.Repositories
         void Agregar(T entidad);
         List<T> ObtenerTodos();
         List<T> ObtenerTodosCon(string propiedadRelacionada);
-        T ObtenerPorId(int id);
+        T? ObtenerPorId(int id);
         void Modificar(T entidad);
         void Eliminar(object id);
     }

@@ -1,25 +1,29 @@
 ﻿using System;
 using System.Linq;
 using System.Windows.Forms;
-using AccesoDatos.Data;
 using AccesoDatos.Models;
+using AccesoDatos.Repositories;
 
 namespace Biblioteca.WinForms
 {
     public partial class FormReportes : Form
     {
-        private AplicationDbContext _context;
+        private readonly IGenericRepository<Libro> _libroRepository;
+        private readonly IGenericRepository<Cliente> _clienteRepository;
 
-        public FormReportes()
+        public FormReportes(
+            IGenericRepository<Libro> libroRepository,
+            IGenericRepository<Cliente> clienteRepository)
         {
             InitializeComponent();
-            _context = new AplicationDbContext();
+            _libroRepository = libroRepository;
+            _clienteRepository = clienteRepository;
         }
 
         // Reporte 1: Consulta básica de todos los libros
         private void btnReporte1_Click(object sender, EventArgs e)
         {
-            var libros = _context.Libros.ToList();
+            var libros = _libroRepository.ObtenerTodos();
             dgvReportes.DataSource = libros;
         }
 
@@ -27,14 +31,14 @@ namespace Biblioteca.WinForms
         private void btnReporte2_Click(object sender, EventArgs e)
         {
             // Asumiendo que tienes un DbSet<Cliente> Clientes en tu DbContext
-            var clientes = _context.Clientes.ToList();
+            var clientes = _clienteRepository.ObtenerTodos();
             dgvReportes.DataSource = clientes;
         }
 
         // Reporte 3: Consulta ordenada alfabéticamente (OrderBy)
         private void btnReporte3_Click(object sender, EventArgs e)
         {
-            var librosOrdenados = _context.Libros
+            var librosOrdenados = _libroRepository.ObtenerTodos()
                                           .OrderBy(l => l.Titulo)
                                           .ToList();
             dgvReportes.DataSource = librosOrdenados;
@@ -43,7 +47,7 @@ namespace Biblioteca.WinForms
         // Reporte 4: Consulta combinada (Top 5 más recientes)
         private void btnReporte4_Click(object sender, EventArgs e)
         {
-            var ultimosLibros = _context.Libros
+            var ultimosLibros = _libroRepository.ObtenerTodos()
                                         .OrderByDescending(l => l.Id)
                                         .Take(5)
                                         .ToList();
@@ -62,7 +66,7 @@ namespace Biblioteca.WinForms
             var textoBusqueda = txtBuscar.Text.ToLower();
 
             // Busca libros que contengan el texto escrito en el título
-            var resultados = _context.Libros
+            var resultados = _libroRepository.ObtenerTodos()
                                      .Where(l => l.Titulo.ToLower().Contains(textoBusqueda))
                                      .ToList();
 

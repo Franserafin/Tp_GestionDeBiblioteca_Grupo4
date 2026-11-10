@@ -1,3 +1,8 @@
+using AccesoDatos.Data;
+using AccesoDatos.Repositories;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+
 namespace Biblioteca.WinForms
 {
     internal static class Program
@@ -8,10 +13,26 @@ namespace Biblioteca.WinForms
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FormPrincipal());
+
+            ServiceCollection services = new();
+            services.AddDbContext<AplicationDbContext>(options =>
+                options.UseSqlite("Data Source=biblioteca.db"));
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddTransient<FormPrincipal>();
+            services.AddTransient<FormLibros>();
+            services.AddTransient<FormClientes>();
+            services.AddTransient<FormAlquileres>();
+            services.AddTransient<FormReportes>();
+
+            using ServiceProvider serviceProvider = services.BuildServiceProvider();
+            using (IServiceScope scope = serviceProvider.CreateScope())
+            {
+                scope.ServiceProvider.GetRequiredService<AplicationDbContext>()
+                    .Database.EnsureCreated();
+            }
+
+            Application.Run(serviceProvider.GetRequiredService<FormPrincipal>());
         }
     }
 }

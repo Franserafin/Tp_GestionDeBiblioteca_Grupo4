@@ -1,38 +1,41 @@
 ﻿using System;
 using System.Windows.Forms;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Biblioteca.WinForms
 {
     public partial class FormPrincipal : Form
     {
-        public FormPrincipal()
+        private readonly IServiceProvider _serviceProvider;
+
+        public FormPrincipal(IServiceProvider serviceProvider)
         {
             InitializeComponent();
+            _serviceProvider = serviceProvider;
         }
 
         private void btnLibros_Click(object sender, EventArgs e)
         {
             // Abre la pantalla de libros que ya construimos
-            FormLibros formLibros = new FormLibros();
-            formLibros.ShowDialog(); // ShowDialog impide usar el menú hasta que cierres la ventana de libros
+            using FormLibros formLibros = _serviceProvider.GetRequiredService<FormLibros>();
+            formLibros.ShowDialog();
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            FormClientes formClientes = new FormClientes();
+            using FormClientes formClientes = _serviceProvider.GetRequiredService<FormClientes>();
             formClientes.ShowDialog();
         }
 
         private void btnAlquileres_Click(object sender, EventArgs e)
         {
-            FormAlquileres formAlquileres = new FormAlquileres();
+            using FormAlquileres formAlquileres = _serviceProvider.GetRequiredService<FormAlquileres>();
             formAlquileres.ShowDialog();
         }
 
         private void btnReportes_Click(object sender, EventArgs e)
         {
-            // Abre la nueva pantalla de reportes
-            FormReportes formReportes = new FormReportes();
+            using FormReportes formReportes = _serviceProvider.GetRequiredService<FormReportes>();
             formReportes.ShowDialog();
         }
 

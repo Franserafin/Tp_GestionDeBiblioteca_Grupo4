@@ -1,21 +1,25 @@
 ﻿using System;
-using System.Linq;
 using System.Windows.Forms;
-using AccesoDatos.Data;
 using AccesoDatos.Models;
+using AccesoDatos.Repositories;
 
 namespace Biblioteca.WinForms
 {
     public partial class FormAlquileres : Form
     {
-        private AplicationDbContext _context;
+        private readonly IGenericRepository<Alquiler> _alquilerRepository;
+        private readonly IGenericRepository<Libro> _libroRepository;
+        private readonly IGenericRepository<Cliente> _clienteRepository;
 
-        public FormAlquileres()
+        public FormAlquileres(
+            IGenericRepository<Alquiler> alquilerRepository,
+            IGenericRepository<Libro> libroRepository,
+            IGenericRepository<Cliente> clienteRepository)
         {
             InitializeComponent();
-            _context = new AplicationDbContext();
-            _context.Database.EnsureCreated();
-
+            _alquilerRepository = alquilerRepository;
+            _libroRepository = libroRepository;
+            _clienteRepository = clienteRepository;
         }
 
         private void FormAlquileres_Load(object sender, EventArgs e)
@@ -27,19 +31,19 @@ namespace Biblioteca.WinForms
         private void CargarCombos()
         {
             // Cargar Libros en el ComboBox
-            cmbLibro.DataSource = _context.Libros.ToList();
+            cmbLibro.DataSource = _libroRepository.ObtenerTodos();
             cmbLibro.DisplayMember = "Titulo";
             cmbLibro.ValueMember = "Id";
 
             // Cargar Clientes en el ComboBox
-            cmbCliente.DataSource = _context.Clientes.ToList();
+            cmbCliente.DataSource = _clienteRepository.ObtenerTodos();
             cmbCliente.DisplayMember = "Nombre";
-            cmbCliente.ValueMember = "Dni"; // CAMBIA ESTO si tu identificador se llama "Id" o "Dni"
+            cmbCliente.ValueMember = "Id";
         }
 
         private void CargarAlquileres()
         {
-            dgvAlquileres.DataSource = _context.Alquileres.ToList();
+            dgvAlquileres.DataSource = _alquilerRepository.ObtenerTodos();
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -52,15 +56,14 @@ namespace Biblioteca.WinForms
 
             var nuevoAlquiler = new Alquiler
             {
-                LibroId = (int)cmbLibro.SelectedValue,
-                ClienteId = (int)cmbCliente.SelectedValue,
+                LibroId = Convert.ToInt32(cmbLibro.SelectedValue),
+                ClienteId = Convert.ToInt32(cmbCliente.SelectedValue),
                 FechaPrestamo = DateTime.Now,
                 FechaDevolucion = dtpFechaDevolucion.Value,
                 Devuelto = false
             };
 
-            _context.Alquileres.Add(nuevoAlquiler);
-            _context.SaveChanges();
+            _alquilerRepository.Agregar(nuevoAlquiler);
 
             MessageBox.Show("Alquiler registrado con éxito.");
             CargarAlquileres();
@@ -71,12 +74,12 @@ namespace Biblioteca.WinForms
             if (dgvAlquileres.CurrentRow != null)
             {
                 int idAlquiler = (int)dgvAlquileres.CurrentRow.Cells["Id"].Value;
-                var alquiler = _context.Alquileres.FirstOrDefault(a => a.Id == idAlquiler);
+                var alquiler = _alquilerRepository.ObtenerPorId(idAlquiler);
 
                 if (alquiler != null && !alquiler.Devuelto)
                 {
                     alquiler.Devuelto = true;
-                    _context.SaveChanges();
+                    _alquilerRepository.Modificar(alquiler);
                     MessageBox.Show("Libro marcado como devuelto.");
                     CargarAlquileres();
                 }

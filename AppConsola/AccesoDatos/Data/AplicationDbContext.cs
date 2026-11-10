@@ -1,22 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using AccesoDatos.Models;
+﻿using AccesoDatos.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace AccesoDatos.Data
 {
     public class AplicationDbContext : DbContext
     {
-        public DbSet<Alquiler> Alquileres { get; set; }
-        public DbSet <Categoria> Categoria { get; set; }
-        public DbSet<Cliente> Clientes { get; set; }
-        public DbSet<Libro> Libros { get; set; }
-
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public AplicationDbContext(DbContextOptions<AplicationDbContext> options)
+            : base(options)
         {
-            optionsBuilder.UseSqlite("Data Source=C:\\databases\\BaseDeDatps.db");
+        }
+
+        public DbSet<Alquiler> Alquileres => Set<Alquiler>();
+        public DbSet<Categoria> Categorias => Set<Categoria>();
+        public DbSet<Cliente> Clientes => Set<Cliente>();
+        public DbSet<Libro> Libros => Set<Libro>();
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Alquiler>()
+                .HasOne(alquiler => alquiler.Cliente)
+                .WithMany()
+                .HasForeignKey(alquiler => alquiler.ClienteId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Alquiler>()
+                .HasOne(alquiler => alquiler.Libro)
+                .WithMany(libro => libro.Alquileres)
+                .HasForeignKey(alquiler => alquiler.LibroId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

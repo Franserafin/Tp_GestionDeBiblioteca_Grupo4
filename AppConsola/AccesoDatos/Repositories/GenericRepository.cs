@@ -1,6 +1,5 @@
 ﻿
 using AccesoDatos.Data;
-using AccesoDatos.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace AccesoDatos.Repositories
@@ -9,9 +8,9 @@ namespace AccesoDatos.Repositories
     {
         protected readonly AplicationDbContext _context;
 
-        public GenericRepository()
+        public GenericRepository(AplicationDbContext context)
         {
-            _context = new AplicationDbContext();
+            _context = context;
         }
 
         public void Agregar(T entidad)
@@ -35,7 +34,7 @@ namespace AccesoDatos.Repositories
                            .ToList();
         }
 
-        public T ObtenerPorId(int id)
+        public T? ObtenerPorId(int id)
         {
             return _context.Set<T>().Find(id);
         }
