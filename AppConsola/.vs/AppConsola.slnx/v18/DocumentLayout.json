@@ -79,7 +79,6 @@
               "ViewState": "AgIAABwAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-10T21:34:06.488Z",
-              "EditorCaption": "",
               "OwnerCaption": "%2"
             },
             {
@@ -146,7 +145,6 @@
               "ViewState": "AgIAABQAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-10T23:14:05.864Z",
-              "EditorCaption": "",
               "OwnerCaption": "%2"
             },
             {
@@ -235,7 +233,7 @@
               "RelativeDocumentMoniker": "Biblioteca.WinForms\\FormAlquileres.cs",
               "ToolTip": "C:\\Ingenieria de software\\Tp_GestionDeBiblioteca_Grupo4\\AppConsola\\Biblioteca.WinForms\\FormAlquileres.cs",
               "RelativeToolTip": "Biblioteca.WinForms\\FormAlquileres.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAEBTwBgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAIBJwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-03T02:16:31.28Z",
               "EditorCaption": "",
@@ -252,7 +250,6 @@
               "ViewState": "AgIAAAsAAAAAAAAAAIBWwBEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-03T02:07:12.97Z",
-              "EditorCaption": "",
               "OwnerCaption": "%2"
             }
           ]

@@ -73,16 +73,24 @@ namespace Biblioteca.WinForms
                 return;
             }
 
-            DateTime fechaDevolucionEsperada = dtpFechaDevolucion.Value;
-            if (fechaDevolucionEsperada.Date < DateTime.Today)
+            int idLibro = Convert.ToInt32(cmbLibro.SelectedValue);
+            var libro = _libroRepository.ObtenerPorId(idLibro);
+            if (libro == null || !string.Equals(libro.Estado, "Disponible", StringComparison.OrdinalIgnoreCase))
             {
-                MessageBox.Show("La fecha esperada de devolución no puede ser anterior a hoy.");
+                MessageBox.Show("El libro no se puede alquilar en este momento.");
+                return;
+            }
+
+            DateTime fechaDevolucionEsperada = dtpFechaDevolucion.Value;
+            if (fechaDevolucionEsperada.Date < DateTime.Today.AddDays(1))
+            {
+                MessageBox.Show("El tiempo mínimo de alquiler es de un día.");
                 return;
             }
 
             var nuevoAlquiler = new Alquiler
             {
-                LibroId = Convert.ToInt32(cmbLibro.SelectedValue),
+                LibroId = idLibro,
                 ClienteId = Convert.ToInt32(cmbCliente.SelectedValue),
                 FechaPrestamo = DateTime.Now,
                 FechaDevolucion = fechaDevolucionEsperada,
@@ -95,12 +103,8 @@ namespace Biblioteca.WinForms
 
             _alquilerRepository.Agregar(nuevoAlquiler);
 
-            var libro = _libroRepository.ObtenerPorId(nuevoAlquiler.LibroId);
-            if (libro != null)
-            {
-                libro.Estado = "No disponible";
-                _libroRepository.Modificar(libro);
-            }
+            libro.Estado = "No disponible";
+            _libroRepository.Modificar(libro);
 
             MessageBox.Show("Alquiler registrado con éxito.");
             CargarAlquileres();
