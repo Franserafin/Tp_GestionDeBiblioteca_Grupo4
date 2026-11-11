@@ -129,3 +129,9 @@ C:\Ingenieria de software\Tp_GestionDeBiblioteca_Grupo4\AppConsola\Biblioteca.Wi
 C:\Ingenieria de software\Tp_GestionDeBiblioteca_Grupo4\AppConsola\Biblioteca.WinForms\obj\Debug\net10.0-windows\Biblioteca.WinForms.pdb
 C:\Ingenieria de software\Tp_GestionDeBiblioteca_Grupo4\AppConsola\Biblioteca.WinForms\obj\Debug\net10.0-windows\Biblioteca.WinForms.genruntimeconfig.cache
 C:\Ingenieria de software\Tp_GestionDeBiblioteca_Grupo4\AppConsola\Biblioteca.WinForms\obj\Debug\net10.0-windows\ref\Biblioteca.WinForms.dll
+C:\Ingenieria de software\Tp_GestionDeBiblioteca_Grupo4\session-state\responsive-build\Biblioteca.WinForms.exe
+C:\Ingenieria de software\Tp_GestionDeBiblioteca_Grupo4\session-state\responsive-build\Biblioteca.WinForms.deps.json
+C:\Ingenieria de software\Tp_GestionDeBiblioteca_Grupo4\session-state\responsive-build\Biblioteca.WinForms.runtimeconfig.json
+C:\Ingenieria de software\Tp_GestionDeBiblioteca_Grupo4\session-state\responsive-build\Biblioteca.WinForms.runtimeconfig.dev.json
+C:\Ingenieria de software\Tp_GestionDeBiblioteca_Grupo4\session-state\responsive-build\Biblioteca.WinForms.dll
+C:\Ingenieria de software\Tp_GestionDeBiblioteca_Grupo4\session-state\responsive-build\Biblioteca.WinForms.pdb

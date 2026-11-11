@@ -13,6 +13,7 @@ namespace Biblioteca.WinForms
         public FormLibros(IGenericRepository<Libro> libroRepository)
         {
             InitializeComponent();
+            TemaVisual.AplicarTemaGlobal(this);
             _libroRepository = libroRepository;
         }
 

@@ -32,6 +32,7 @@
             this.dgvReportes.Location = new System.Drawing.Point(220, 20);
             this.dgvReportes.Name = "dgvReportes";
             this.dgvReportes.Size = new System.Drawing.Size(550, 320);
+            this.dgvReportes.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
 
             // btnReporte1
             this.btnReporte1.Location = new System.Drawing.Point(12, 20);

@@ -19,6 +19,7 @@ namespace Biblioteca.WinForms
             IGenericRepository<Cliente> clienteRepository)
         {
             InitializeComponent();
+            TemaVisual.AplicarTemaGlobal(this);
             _alquilerRepository = alquilerRepository;
             _libroRepository = libroRepository;
             _clienteRepository = clienteRepository;

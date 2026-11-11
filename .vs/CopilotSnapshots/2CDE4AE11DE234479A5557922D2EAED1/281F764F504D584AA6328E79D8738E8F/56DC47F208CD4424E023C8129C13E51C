@@ -1,0 +1,102 @@
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace Biblioteca.WinForms
+{
+    public static class TemaVisual
+    {
+        public static readonly Color Fondo = Color.FromArgb(248, 250, 252);
+        public static readonly Color Primario = Color.FromArgb(37, 99, 235);
+        public static readonly Color Texto = Color.FromArgb(31, 41, 55);
+        public static readonly Color TextoSecundario = Color.FromArgb(255, 255, 255);
+        public static readonly Color HoverBoton = Color.FromArgb(29, 78, 216);
+        public static readonly Color PresionadoBoton = Color.FromArgb(30, 64, 175);
+        public static readonly Color LineaGrilla = Color.FromArgb(226, 232, 240);
+        public static readonly Color SeleccionGrilla = Color.FromArgb(219, 234, 254);
+        public static readonly Color FilaAlternaGrilla = Color.FromArgb(248, 250, 252);
+        public static readonly Font FuenteGlobal = new Font("Segoe UI", 10F, FontStyle.Regular);
+
+        public static void ConfigurarFormulario(Form form)
+        {
+            form.BackColor = Fondo;
+            form.Font = FuenteGlobal;
+            form.WindowState = FormWindowState.Maximized;
+            ConfigurarFuenteControles(form.Controls);
+        }
+
+        public static void ConfigurarBoton(Button btn)
+        {
+            btn.FlatStyle = FlatStyle.Flat;
+            btn.FlatAppearance.BorderSize = 0;
+            btn.FlatAppearance.MouseOverBackColor = HoverBoton;
+            btn.FlatAppearance.MouseDownBackColor = PresionadoBoton;
+            btn.BackColor = Primario;
+            btn.ForeColor = TextoSecundario;
+            btn.UseVisualStyleBackColor = false;
+        }
+
+        public static void ConfigurarGrilla(DataGridView dgv)
+        {
+            dgv.BackgroundColor = Color.White;
+            dgv.GridColor = LineaGrilla;
+            dgv.BorderStyle = BorderStyle.None;
+            dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dgv.RowHeadersVisible = false;
+            dgv.EnableHeadersVisualStyles = false;
+            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgv.Font = FuenteGlobal;
+
+            dgv.ColumnHeadersDefaultCellStyle.BackColor = Primario;
+            dgv.ColumnHeadersDefaultCellStyle.ForeColor = TextoSecundario;
+            dgv.ColumnHeadersDefaultCellStyle.Font = new Font(FuenteGlobal, FontStyle.Bold);
+            dgv.ColumnHeadersDefaultCellStyle.SelectionBackColor = Primario;
+            dgv.ColumnHeadersDefaultCellStyle.SelectionForeColor = TextoSecundario;
+
+            dgv.DefaultCellStyle.BackColor = Color.White;
+            dgv.DefaultCellStyle.ForeColor = Texto;
+            dgv.DefaultCellStyle.SelectionBackColor = SeleccionGrilla;
+            dgv.DefaultCellStyle.SelectionForeColor = Texto;
+            dgv.RowsDefaultCellStyle.BackColor = Color.White;
+            dgv.RowsDefaultCellStyle.ForeColor = Texto;
+            dgv.RowsDefaultCellStyle.SelectionBackColor = SeleccionGrilla;
+            dgv.RowsDefaultCellStyle.SelectionForeColor = Texto;
+            dgv.AlternatingRowsDefaultCellStyle.BackColor = FilaAlternaGrilla;
+            dgv.AlternatingRowsDefaultCellStyle.ForeColor = Texto;
+            dgv.AlternatingRowsDefaultCellStyle.SelectionBackColor = SeleccionGrilla;
+            dgv.AlternatingRowsDefaultCellStyle.SelectionForeColor = Texto;
+        }
+
+        public static void AplicarTemaGlobal(Form form)
+        {
+            ConfigurarFormulario(form);
+            AplicarTemaControles(form.Controls);
+        }
+
+        private static void AplicarTemaControles(Control.ControlCollection controles)
+        {
+            foreach (Control control in controles)
+            {
+                if (control is Button boton)
+                {
+                    ConfigurarBoton(boton);
+                }
+                else if (control is DataGridView grilla)
+                {
+                    ConfigurarGrilla(grilla);
+                }
+
+                AplicarTemaControles(control.Controls);
+            }
+        }
+
+        private static void ConfigurarFuenteControles(Control.ControlCollection controles)
+        {
+            foreach (Control control in controles)
+            {
+                control.Font = FuenteGlobal;
+                ConfigurarFuenteControles(control.Controls);
+            }
+        }
+    }
+}

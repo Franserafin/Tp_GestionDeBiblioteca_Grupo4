@@ -12,6 +12,7 @@ namespace Biblioteca.WinForms
         public FormClientes(IGenericRepository<Cliente> clienteRepository)
         {
             InitializeComponent();
+            TemaVisual.AplicarTemaGlobal(this);
             _clienteRepository = clienteRepository;
         }
 

@@ -35,6 +35,7 @@
             this.dgvAlquileres.Location = new System.Drawing.Point(12, 12);
             this.dgvAlquileres.Name = "dgvAlquileres";
             this.dgvAlquileres.Size = new System.Drawing.Size(550, 200);
+            this.dgvAlquileres.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             this.dgvAlquileres.TabIndex = 0;
 
             // lblLibro
@@ -42,6 +43,7 @@
             this.lblLibro.Location = new System.Drawing.Point(12, 230);
             this.lblLibro.Name = "lblLibro";
             this.lblLibro.Size = new System.Drawing.Size(37, 15);
+            this.lblLibro.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             this.lblLibro.Text = "Libro:";
 
             // cmbLibro
@@ -50,12 +52,14 @@
             this.cmbLibro.Location = new System.Drawing.Point(70, 227);
             this.cmbLibro.Name = "cmbLibro";
             this.cmbLibro.Size = new System.Drawing.Size(200, 23);
+            this.cmbLibro.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
 
             // lblCliente
             this.lblCliente.AutoSize = true;
             this.lblCliente.Location = new System.Drawing.Point(12, 265);
             this.lblCliente.Name = "lblCliente";
             this.lblCliente.Size = new System.Drawing.Size(47, 15);
+            this.lblCliente.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             this.lblCliente.Text = "Cliente:";
 
             // cmbCliente
@@ -64,35 +68,41 @@
             this.cmbCliente.Location = new System.Drawing.Point(70, 262);
             this.cmbCliente.Name = "cmbCliente";
             this.cmbCliente.Size = new System.Drawing.Size(200, 23);
+            this.cmbCliente.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
 
             // lblFecha
             this.lblFecha.AutoSize = true;
             this.lblFecha.Location = new System.Drawing.Point(12, 300);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(71, 15);
+            this.lblFecha.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             this.lblFecha.Text = "Devolución:";
 
             // dtpFechaDevolucion
             this.dtpFechaDevolucion.Location = new System.Drawing.Point(90, 297);
             this.dtpFechaDevolucion.Name = "dtpFechaDevolucion";
             this.dtpFechaDevolucion.Size = new System.Drawing.Size(180, 23);
+            this.dtpFechaDevolucion.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
 
             // lblCostoReserva
             this.lblCostoReserva.AutoSize = true;
             this.lblCostoReserva.Location = new System.Drawing.Point(12, 335);
             this.lblCostoReserva.Name = "lblCostoReserva";
             this.lblCostoReserva.Size = new System.Drawing.Size(78, 15);
+            this.lblCostoReserva.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             this.lblCostoReserva.Text = "Costo reserva:";
 
             // txtCostoReserva
             this.txtCostoReserva.Location = new System.Drawing.Point(90, 332);
             this.txtCostoReserva.Name = "txtCostoReserva";
             this.txtCostoReserva.Size = new System.Drawing.Size(180, 23);
+            this.txtCostoReserva.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
 
             // btnRegistrar
             this.btnRegistrar.Location = new System.Drawing.Point(320, 225);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(120, 40);
+            this.btnRegistrar.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
             this.btnRegistrar.Text = "Registrar Alquiler";
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
 
@@ -100,6 +110,7 @@
             this.btnDevolver.Location = new System.Drawing.Point(320, 280);
             this.btnDevolver.Name = "btnDevolver";
             this.btnDevolver.Size = new System.Drawing.Size(120, 40);
+            this.btnDevolver.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
             this.btnDevolver.Text = "Marcar Devuelto";
             this.btnDevolver.Click += new System.EventHandler(this.btnDevolver_Click);
 

@@ -11,6 +11,7 @@ namespace Biblioteca.WinForms
         public FormPrincipal(IServiceProvider serviceProvider)
         {
             InitializeComponent();
+            TemaVisual.AplicarTemaGlobal(this);
             _serviceProvider = serviceProvider;
         }
 
